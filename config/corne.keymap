@@ -14,7 +14,23 @@
 
 #define XXX &none
 
+#define HRML(k1,k2,k3,k4) &ht LMETA  k1  &ht LALT  k2  &ht LCTRL k3  &ht LSHIFT k4
+#define HRMR(k1,k2,k3,k4) &ht RSHIFT k1  &ht RCTRL k2  &ht RALT  k3  &ht RMETA  k4
+
 / {
+// -----------------------------------------------------------------------------------------
+        behaviors {
+        ht: hold_tap {
+            label = "hold_tap";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
 // -----------------------------------------------------------------------------------------
         combos_esc {
