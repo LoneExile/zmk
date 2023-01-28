@@ -10,7 +10,7 @@
 
 #define BASE  0
 #define SYM   1
-#define NUM   2
+//#define NUM   2
 
 #define XXX &none
 
@@ -21,7 +21,6 @@
 
 // -----------------------------------------------------------------------------------------
         behaviors {
-// -----------------------------------------------------------------------------------------
         ht: hold_tap {
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
@@ -81,17 +80,6 @@
            XXX &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 XXX
            XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans XXX
            XXX &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans XXX
-                &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-                        >;
-                };
-// -----------------------------------------------------------------------------------------
-
-                nav_layer {
-// -----------------------------------------------------------------------------------------
-                        bindings = <
-   XXX &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 XXX
-   XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans XXX
-   XXX &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans XXX
                 &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
