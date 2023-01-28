@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define BASE  0
 #define SYM   1
@@ -14,7 +15,7 @@
 
 #define XXX &none
 
-#define HRML(k1,k2,k3,k4) &ht LMETA  k1  &ht LALT  k2  &ht LCTRL k3  &ht LSHIFT k4
+#define HRML(k2,k3,k4,k5) &ht LMETA  k2  &ht LALT  k3  &ht LCTRL k4  &ht LSHIFT k5
 #define HRMR(k1,k2,k3,k4) &ht RSHIFT k1  &ht RCTRL k2  &ht RALT  k3  &ht RMETA  k4
 
 / {
