@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define BASE  0
 #define SYM   1
@@ -15,12 +14,7 @@
 
 #define XXX &none
 
-//#define HRML(k2,k3,k4,k5) &ht LMETA  k2  &ht LALT  k3  &ht LCTRL k4  &ht LSHIFT k5
-//#define HRMR(k1,k2,k3,k4) &ht RSHIFT k1  &ht RCTRL k2  &ht RALT  k3  &ht RMETA  k4
-
 / {
-
-// -----------------------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------------------
         combos_esc {
@@ -40,36 +34,29 @@
 // -----------------------------------------------------------------------------------------
                 base_layer {
 // -----------------------------------------------------------------------------------------
+// | XXX |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | XXX |
+// | XXX |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | XXX |
+// | XXX |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | XXX |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-//      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-   XXX    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P       XXX
-//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │
-//   XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,        SEMIC)      XXX
-     XXX    &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMIC   XXX
-//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │
-   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
-//      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
-//                            ╭──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────╮
-//                            │  ESC     │  SPACE   │  TAB     │   │  RET     │  BSPC    │  DEL     │
-                                &kp ESC    &kp SPACE  &kp TAB        &kp RET    &kp BSPC   &kp DEL
-//                            ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+   XXX &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    XXX
+   XXX &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI XXX
+   XXX &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH XXX
+                &kp ESC &kp SPACE &kp TAB   &kp RET &kp BSPC &kp DEL
                         >;
                 };
 
 // -----------------------------------------------------------------------------------------
                 sym_layer {
 // -----------------------------------------------------------------------------------------
+// | XXX |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | XXX |
+// | XXX |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | XXX |
+// | XXX |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | XXX |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-
-//      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-
-           XXX &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 XXX
-           XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans XXX
-           XXX &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans XXX
+   XXX &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 XXX
+   XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans XXX
+   XXX &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans XXX
                 &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
