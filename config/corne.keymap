@@ -10,11 +10,29 @@
 
 #define BASE  0
 #define SYM   1
-//#define NUM   2
+#define NUM   2
 
 #define XXX &none
 
+#define HRML(k1,k2,k3,k4) &ht LMETA  k1  &ht LALT  k2  &ht LCTRL k3  &ht LSHIFT k4
+#define HRMR(k1,k2,k3,k4) &ht RSHIFT k1  &ht RCTRL k2  &ht RALT  k3  &ht RMETA  k4
+
 / {
+
+// -----------------------------------------------------------------------------------------
+        behaviors {
+// -----------------------------------------------------------------------------------------
+        ht: hold_tap {
+            label = "hold_tap";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
 // -----------------------------------------------------------------------------------------
         combos_esc {
@@ -34,25 +52,46 @@
 // -----------------------------------------------------------------------------------------
                 base_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   XXX &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    XXX
-   XXX &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI XXX
-   XXX &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH XXX
-                &kp BSPC &mo SYM &kp SPACE   &kp RET &mo SYM &kp RALT
+//      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+//      │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
+   XXX    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P       XXX
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │
+   XXX   LSHIFT(A,   S,         D,         F)         &kp G          &kp H      RSHIFT(J,   K,         L)        &kp SEMIC   XXX
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,       │  .       │  /       │
+   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
+//      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
+//                            ╭──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────╮
+//                            │  ESC     │  SPACE   │  TAB     │   │  RET     │  BSPC    │  DEL     │
+                                &kp ESC    &kp SPACE  &kp TAB        &kp RET    &kp BSPC   &kp DEL
+//                            ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
                         >;
                 };
 
 // -----------------------------------------------------------------------------------------
                 sym_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | XXX |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | XXX |
+// | XXX |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | XXX |
+// | XXX |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | XXX |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   XXX &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 XXX
+   XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans XXX
+   XXX &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans XXX
+                &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                        >;
+                };
+// -----------------------------------------------------------------------------------------
+
+                nav_layer {
+// -----------------------------------------------------------------------------------------
+// | XXX |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | XXX |
+// | XXX |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | XXX |
+// | XXX |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | XXX |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    XXX &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 XXX
    XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans XXX
