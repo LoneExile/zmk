@@ -42,6 +42,8 @@
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │
    XXX &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI XXX
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │
    XXX &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH XXX
                 &kp ESC &kp SPACE &kp TAB   &kp RET &kp BSPC &kp DEL
                         >;
