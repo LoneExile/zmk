@@ -11,7 +11,7 @@
 #define BASE   0
 #define SYM    1
 #define NUM    2
-#define SS     &lt SYM SPACE
+#define LTSS     &lt SYM SPACE
 
 #define XXX &none
 
@@ -58,14 +58,14 @@
    XXX    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │
-   XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,        SEMI)      XXX
+   XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,        SEMI)       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │
    XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    ESC      │  SPACE/SYM  │    TAB     │   │    RET     │    BSPC      │    DEL      │
-                          &kp ESC       SS            &kp TAB          &kp RET      &kp BSPC       &kp DEL
+                          &kp ESC       LTSS          &kp TAB          &kp RET      &kp BSPC       &kp DEL
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -76,12 +76,19 @@
                         label = "SYM";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
-
-   XXX &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 XXX
-   XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans XXX
-   XXX &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans XXX
-                &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+//      │  Q       │  W       │  E       │  R       │  T       │   │   [ {    │  &       │  *       │  (       │   ] }    │
+   XXX    XXX         XXX        XXX        XXX        XXX          &kp LBKT    &kp AMPS    &kp STAR   &kp LPAR   &kp RBKT   XXX
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  A       │  S       │  D       │  F       │  G       │   │   = +    │   $      │  %       │  ^       │  ; :     │
+   XXX    &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  XXX           &kp EQUAL   &kp DLLR   &kp PRCNT  &kp CARET  &kp SEMI    XXX 
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  Z       │  X       │  C       │  V       │  B       │   │    \ |   │  !       │   @      │   #      │   ` ~    │
+   XXX    XXX         XXX        XXX        XXX        XXX           &kp NUBS   &kp EXCL   &kp AT     &kp HASH   &kp GRAVE   XXX
+//      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
+//                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
+//                    │    ESC      │  SPACE/SYM  │    TAB     │   │    _ -     │    (         │    )        │
+                           XXX          SS             XXX            &kp MINUS     &kp LPAR       &kp RPAR
+//                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
 // -----------------------------------------------------------------------------------------
