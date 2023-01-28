@@ -83,7 +83,7 @@
    XXX    &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  XXX           &kp EQUAL   &kp DLLR   &kp PRCNT  &kp CARET  &kp SEMI    XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  Z       │  X       │  C       │  V       │  B       │   │    \ |   │  !       │   @      │   #      │   ` ~    │
-   XXX    XXX         XXX        XXX        XXX        XXX           &kp NUBS   &kp EXCL   &kp AT     &kp HASH   &kp GRAVE   XXX
+   XXX    XXX         XXX        XXX        XXX        XXX           &kp BSLH   &kp EXCL   &kp AT     &kp HASH   &kp GRAVE   XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    ESC      │  SPACE/SYM  │    TAB     │   │    _ -     │    (         │    )        │
