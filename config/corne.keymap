@@ -22,7 +22,9 @@
 #define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LCTRL k2 &ht LALT  k3 &ht LMETA  k4
 #define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL k3 &ht RSHIFT k4
 
+// -----------------------------------------------------------------------------------------
 // Media keys
+// -----------------------------------------------------------------------------------------
 #define MUTE   &kp C_MUTE
 #define PREV   &kp C_PREV
 #define VOL_DN &kp C_VOL_DN
@@ -34,8 +36,10 @@
 #define BRI_DN &kp C_BRIGHTNESS_DEC
 
 / {
+
 // -----------------------------------------------------------------------------------------
         behaviors {
+// -----------------------------------------------------------------------------------------
         ht: hold_tap {
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
@@ -79,7 +83,7 @@
    XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    TAB      │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │    DEL      │
+//                    │  TAB/MEDIA  │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │    DEL      │
                            LTMT         LTSS           LTNE            &kp RET      &kp BSPC       &kp DEL
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
@@ -145,8 +149,8 @@
    XXX    XXX         XXX        XXX        XXX        XXX          &kp REWIND  XXX        XXX        &kp FFWD   XXX         XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │    X       │   │  Mute      │  Play/Pause  │    X        │
-                            XXX           LTMT         XXX           &kp MUTE       &kp C_PP       XXX
+//                    │  TAB/MEDIA  │      X      │    X       │   │  Mute      │  Play/Pause  │    X        │
+                           LTMT           XXX         XXX            &kp MUTE       &kp C_PP       XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
