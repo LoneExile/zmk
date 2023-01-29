@@ -11,11 +11,11 @@
 #define LINUX  0
 #define SYM    1
 #define NAV    2
-#define media  3
+#define MEDIA  3
 
 #define LTSS   &lt SYM SPACE
 #define LTNE   &lt NAV ESC
-#define LTMT   &lt media TAB
+#define LTMT   &lt MEDIA TAB
 
 #define XXX &none
 
