@@ -8,9 +8,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define LINUX   0
+#define LINUX  0
 #define SYM    1
 #define NAV    2
+#define media  3
 
 #define LTSS   &lt SYM SPACE
 #define LTNE   &lt NAV ESC
@@ -59,8 +60,8 @@
 //      │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
    XXX    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │
-   XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,        SEMI)       XXX
+//      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ' "     │
+   XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,         APOS)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │
    XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
@@ -98,6 +99,28 @@
                 nav_layer {
 // -----------------------------------------------------------------------------------------
                         label = "NAV";
+                        bindings = <
+//      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+//      │  X       │  X       │  X       │  X       │  X       │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
+   XXX    XXX         XXX        XXX        XXX        XXX          &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  X       │  X       │  X       │  X       │  X       │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
+   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX           &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT  &kp CAPS    XXX 
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  X       │  X       │  X       │  X       │  X       │   │  HOME    │  PG_UP   │  PG_DN   │  END     │  INS     │
+   XXX    XXX         XXX        XXX        XXX        XXX           &kp HOME   &kp PG_UP  &kp PG_DN   &kp END    &kp INS    XXX
+//      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
+//                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
+//                    │      X      │      X      │   ESC/NAV  │   │   RET     │    BSPC      │    DEL       │
+                            XXX           XXX          LTNE           &kp RET      &kp BSPC       &kp DEL
+//                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
+                        >;
+                };
+
+// -----------------------------------------------------------------------------------------
+                media_layer {
+// -----------------------------------------------------------------------------------------
+                        label = "MEDIA";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │  X       │  X       │  X       │  X       │  X       │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
