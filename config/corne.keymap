@@ -152,13 +152,13 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │   F12    │    F7    │    F8    │    F9    │  PSCRN   │   │    X     │    X     │    X     │    X     │    X     │
-           &kp F12    &kp F7     &kp F8     &kp F9    &kp PSCRN        XXX        XXX        XXX        XXX        XXX        XXX
+   XXX    &kp F12    &kp F7     &kp F8     &kp F9    &kp PSCRN        XXX        XXX        XXX        XXX        XXX        XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   F11    │    F4    │    F5    │    F6    │  NUMLOCK │   │    X     │  RMETA   │  RALT    │  RCTRL   │  RSHIFT  │
-           &kp F11    &kp F4     &kp F5     &kp F6   &kp KP_NLCK       XXX      &kp RMETA  &kp RALT   &kp RCTRL &kp RSHIFT    XXX
+   XXX    &kp F11    &kp F4     &kp F5     &kp F6   &kp KP_NLCK       XXX      &kp RMETA  &kp RALT   &kp RCTRL &kp RSHIFT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   F10    │    F1    │    F2    │    F3    │  BREAK   │   │    X     │    X     │    X     │    X     │    X     │
-           &kp F10    &kp F1     &kp F2     &kp F3  &kp PAUSE_BREAK    XXX        XXX        XXX        XXX        XXX        XXX
+   XXX    &kp F10    &kp F1     &kp F2     &kp F3  &kp PAUSE_BREAK    XXX        XXX        XXX        XXX        XXX        XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │     X      │   │     X      │      X       │   DEL/FN    │
