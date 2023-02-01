@@ -34,8 +34,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -154,8 +154,8 @@
 //      │   F12    │    F7    │    F8    │    F9    │  PSCRN   │   │    BT_PRV    │   BT_PRV    │    BT_NXT    │   BT_NXT     │   BT_CLR     │
    XXX    &kp F12    &kp F7     &kp F8     &kp F9    &kp PSCRN        &bt BT_PRV    &bt BT_PRV     &bt BT_NXT     &bt BT_NXT     &bt BT_CLR     XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────┼─────────────┼──────────────┼──────────────┼──────────────┤
-//      │   F11    │    F4    │    F5    │    F6    │  NUMLOCK │   │      X       │    RMETA    │    RALT      │     RCTRL    │   RSHIFT     │
-   XXX    &kp F11    &kp F4     &kp F5     &kp F6   &kp KP_NLCK          XXX         &kp RMETA      &kp RALT      &kp RCTRL     &kp RSHIFT      XXX
+//      │   F11    │    F4    │    F5    │    F6    │  NUMLOCK │   │   BEHAVIOR   │    RMETA    │    RALT      │     RCTRL    │   RSHIFT     │
+   XXX    &kp F11    &kp F4     &kp F5     &kp F6   &kp KP_NLCK      &out OUT_TOG    &kp RMETA      &kp RALT      &kp RCTRL     &kp RSHIFT      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────────┼─────────────┼──────────────┼──────────────┼──────────────┤
 //      │   F10    │    F1    │    F2    │    F3    │  BREAK   │   │   BT_SEL 1   │  BT_SEL 2   │   BT_SEL 3   │   BT_SEL 4   │   BT_SEL 5   │
    XXX    &kp F10    &kp F1     &kp F2     &kp F3  &kp PAUSE_BREAK   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 5   XXX
