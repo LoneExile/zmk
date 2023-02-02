@@ -175,13 +175,13 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │    .          9          s          ]          l              x          y           d          b         [
-   XXX    &kp DOT     &kp 9      &kp S      &kp RBRAC  &kp L          &kp X      &kp Y       &kp D      &kp B    &kp LBRAC   XXX
+   XXX    &kp DOT     &kp N9      &kp S    &kp RBKT    &kp L          &kp X      &kp Y       &kp D      &kp B    &kp LBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │    '          g          i          o          ,              v          k           j          h         ;
-   XXX    &kp QUOT    &kp G      &kp I      &kp O      &kp COMMA      &kp V      &kp K       &kp J      &kp H     &kp SCLN   XXX
+   XXX    &kp APOS    &kp G      &kp I      &kp O     &kp COMMA       &kp V      &kp K       &kp J      &kp H     &kp SEMI   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   6           w          m          p          0              8          u           f          t         ^
-   XXX    &kp 6       &kp W      &kp M      &kp P      &kp 0          &kp 8      &kp U       &kp F      &kp T     &kp CIRC   XXX
+   XXX    &kp 6       &kp W      &kp M      &kp P      &kp N0         &kp N8     &kp U       &kp F      &kp T     &kp CARET  XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │  TAB/MEDIA  │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │  DEL/FN     │
