@@ -14,6 +14,8 @@
 #define NAV    2
 #define MEDIA  3
 #define FN     4
+#define THAI1  5
+#define THAI2  6
 
 #define LTS(k1)  &lt SYM k1
 #define LTN(k1)  &lt NAV k1
@@ -108,7 +110,7 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │  X       │  X       │  X       │  X       │  X       │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    XXX         XXX        XXX        XXX        XXX          &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+   XXX    XXX         XXX        XXX        XXX       &tog FN       &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
    XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX           &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT  &kp CAPS    XXX 
@@ -162,8 +164,8 @@
    XXX    &kp F10    &kp F1     &kp F2     &kp F3  &kp PAUSE_BREAK   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 5   XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────────┴─────────────┴──────────────┴──────────────┴──────────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │     X      │   │     X      │      X       │   DEL/FN    │
-                            XXX           XXX          XXX              XXX           XXX          LTF(DEL)
+//                    │      X      │      X      │   TO BASE  │   │     X      │      X       │   DEL/FN    │
+                            XXX           XXX        &to LINUX              XXX           XXX      LTF(DEL)
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
