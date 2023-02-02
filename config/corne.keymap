@@ -200,7 +200,7 @@
    XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)  &kp LS(A)      &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)  XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │     K    │    5     │     c    │    =     │   r      │   │     z    │     e    │     -    │  F       │    4     │
-   XXX    &kp LS(K)  &kp N5      &kp C     &kp EQ      &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F)  &kp N4     XXX
+   XXX    &kp LS(K)  &kp N5      &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F)  &kp N4     XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  A       │     /    │    q     │     I    │     U    │   │     J    │    N     │    L     │    V     │    W     │
    XXX    &kp LS(A)  &kp SLASH   &kp Q     &kp LS(I)  &kp LS(U)      &kp LS(J)  &kp LS(N)  &kp LS(L)  &kp LS(V)  &kp LS(W)  XXX
