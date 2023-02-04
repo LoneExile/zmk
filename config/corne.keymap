@@ -74,7 +74,6 @@
 //      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │
    XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
-//                     this thumb cluster is split in half to allow for the
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     TAB     │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │     DEL     │
                           &kp TAB      LTS(SPACE)     LTN(ESC)        &kp RET      &kp BSPC        &kp DEL
