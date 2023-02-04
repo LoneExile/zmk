@@ -180,11 +180,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        caret_dqt: caret_dqt {
+        caret_fslh: caret_fslh {
             compatible = "zmk,behavior-mod-morph";
-            label = "CARET_DQT";
+            label = "CARET_FSLH";
             #binding-cells = <0>;
-            bindings = <&kp CARET>, <&kp DQT>;
+            bindings = <&kp CARET>, <&kp FSLH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
@@ -250,8 +250,8 @@
 //      │  X       │  X       │  X       │  X       │  X       │   │   [ {    │   & 7    │   # 8    │   ` 9    │   ] }    │
    XXX    XXX         XXX        XXX        XXX        XXX          &kp LBKT    &amps_7     &hash_8   &grave_9   &kp RBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   ^ "    │   = 4    │   % 5    │   6 $    │  ; :     │
-   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX           &caret_dqt   &equal_4   &prcnt_5   &dllr_6    &kp SEMI    XXX 
+//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   ^ /    │   = 4    │   % 5    │   6 $    │  ; :     │
+   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX           &caret_fslh  &equal_4   &prcnt_5   &dllr_6    &kp SEMI    XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │    + ~   │   ! 1    │   * 2    │   @ 3    │   \ |    │
    XXX    XXX         XXX        XXX        XXX        XXX          &plus_tilde  &excl_1   &star_2     &at_3     &kp BSLH   XXX
