@@ -286,10 +286,10 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │  THAI1   │  X       │  X       │  X       │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX   &tog THAI1   XXX        XXX        XXX       &tog FN       &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+   XXX    &to THAI1   XXX        XXX        XXX       &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  MEDIA   │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
-   XXX      HRL                                      &tog MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
+   XXX      HRL                                       &to MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  BASE    │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
    XXX    XXX         XXX        XXX        XXX       &to LINUX      &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
@@ -356,7 +356,7 @@
    XXX    &kp DOT     &kp N9      &kp S    &kp RBKT    &kp L          &kp X      &kp Y       &kp D      &kp B    &kp LBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │    '          g          i          o          ,              v          k           j          h         ;
-   XXX &htt THAI2 APOS &kp G      &kp I      &kp O     &kp COMMA       &kp V      &kp K       &kp J      &kp H     &kp SEMI   XXX
+   XXX &htt THAI2 APOS &kp G      &kp I      &kp O     &kp COMMA       &kp V      &kp K       &kp J      &kp H  &htt THAI2 SEMI   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   6           w          m          p          0              8          u           f          t         ^
    XXX    &kp 6       &kp W      &kp M      &kp P      &kp N0         &kp N8     &kp U       &kp F      &kp T     &kp CARET  XXX
@@ -375,13 +375,13 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │   <      │    D     │     :    │  P       │   A      │   │  C       │   7      │    T     │    {     │   H      │
-   XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)  &kp LS(A)      &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)  XXX
+   XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)  &kp LS(A)      &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │     K    │    5     │     c    │    =     │   r      │   │     z    │     e    │     -    │  F       │    4     │
-   XXX &htt THAI2 LS(K) &kp N5      &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F)  &kp N4     XXX
+   XXX &htt THAI2 LS(K) &kp N5    &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F) &htt THAI2 N4  XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  A       │     /    │    q     │     I    │     U    │   │     J    │    N     │    L     │    V     │    W     │
-   XXX    &kp LS(A)  &kp SLASH   &kp Q     &kp LS(I)  &kp LS(U)      &kp LS(J)  &kp LS(N)  &kp LS(L)  &kp LS(V)  &kp LS(W)  XXX
+   XXX    &kp LS(A)  &kp SLASH   &kp Q     &kp LS(I)  &kp LS(U)      &kp LS(J)  &kp LS(N)  &kp LS(L)  &kp LS(V)  &kp LS(W)      XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
