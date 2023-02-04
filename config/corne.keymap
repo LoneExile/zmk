@@ -386,14 +386,14 @@
                         label = "RAT";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │   X      │   X      │   X      │   X      │   X      │   │   X      │   X      │   X      │   X      │   X      │
-   XXX     XXX        XXX        XXX        XXX        XXX             XXX        XXX        XXX        XXX        XXX       XXX
+//      │   X      │   X      │   X      │   X      │   X      │   │   X      │   X      │  MOVE_UP │   X      │   X      │
+   XXX     XXX        XXX        XXX        XXX        XXX             XXX        XXX       U_MS_U      XXX        XXX       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │   X      │   X      │   X      │   X      │   X      │   │ MOVE_LEFT│ MOVE_DOWN│ MOVE_UP  │MOVE_RIGHT│   X      │
-   XXX     XXX        XXX        XXX        XXX        XXX            U_MS_L     U_MS_D    U_MS_U     U_MS_R       XXX       XXX
+//      │   X      │   X      │   X      │   X      │   X      │   │   X      │ MOVE_LEFT│ MOVE_DOWN│MOVE_RIGHT│   X      │
+   XXX     XXX        XXX        XXX        XXX        XXX            XXX        U_MS_L    U_MS_D     U_MS_R       XXX       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │   X      │   X      │   X      │   X      │   X      │   │   X      │   X      │   X      │   X      │   X      │
-   XXX     XXX        XXX        XXX        XXX        XXX             XXX        XXX        XXX        XXX        XXX       XXX
+//      │   X      │   X      │   X      │   X      │   X      │   │   X      │  PG_DN   │  PG_UP   │   X      │   X      │
+   XXX     XXX        XXX        XXX        XXX        XXX             XXX      &kp PG_DN  &kp PG_UP    XXX        XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │   TO BASE  │   │   LCLICK   │    MCLICK    │    RCLICK   │
