@@ -375,7 +375,7 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │   <      │    D     │     :    │  P       │   A      │   │  C       │   7      │    T     │    {     │   H      │
-   XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)  &kp LS(A)      &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)      XXX
+   XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)   &kp A         &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │     K    │    5     │     c    │    =     │   r      │   │     z    │     e    │     -    │  F       │    4     │
    XXX &htt THAI2 LS(K) &kp N5    &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F) &htt THAI2 N4  XXX
