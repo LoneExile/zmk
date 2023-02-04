@@ -43,16 +43,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        hts: hold_taps {
-            label = "hold_taps";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&mo>, <&space_tab>;
-        };
 // -----------------------------------------------------------------------------------------
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
@@ -63,11 +53,40 @@
             keep-mods = <(MOD_RSFT)>;
         };
 // -----------------------------------------------------------------------------------------
+        htst: ht_space_tab {
+            label = "hold_tap_space_tab";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&mo>, <&space_tab>;
+        };
         space_tab: space_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "SPACE_TAB";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp TAB>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        htest: ht_esc_stab {
+            label = "hold_tap_esc_stab";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&mo>, <&esc_stab>;
+        };
+        esc_stab: esc_stab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_STAB";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp LS(TAB)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
@@ -119,8 +138,8 @@
    XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    TAB      │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │      X      │
-                         &hts NAV 0    LTS(SPACE)     LTN(ESC)        &kp RET      &bspc_del         XXX
+//                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
+                           XXX        &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
