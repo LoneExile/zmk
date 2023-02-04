@@ -26,7 +26,6 @@
 
 #define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LALT  k2 &ht LCTRL k3 &ht LMETA  k4
 #define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RCTRL k2 &ht RALT  k3 &ht RSHIFT k4
-#define TEST &ht NAV space_tab
 
 / {
 
@@ -52,7 +51,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = &lt NAV SPACE, &space_tab;
+            bindings = <&mo>, <&space_tab>;
         };
 // -----------------------------------------------------------------------------------------
         bspc_del: backspace_delete {
@@ -121,7 +120,7 @@
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    TAB      │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │      X      │
-                          &hts      LTS(SPACE)     LTN(ESC)        &kp RET      &bspc_del         XXX
+                         &hts NAV 0    LTS(SPACE)     LTN(ESC)        &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
