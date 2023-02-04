@@ -398,14 +398,14 @@
    XXX     XXX        XXX        XXX        XXX        XXX             XXX        XXX        XXX        XXX        XXX       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         │   X      │   X      │   X      │   X      │   X      │   │ MOVE_LEFT│ MOVE_DOWN│ MOVE_UP  │MOVE_RIGHT│   X      │
-   XXX     XXX        XXX        XXX        XXX        XXX            U_MS_L     U_MS_D     U_MS_U     U_MS_R        XXX     XXX
+   XXX     XXX        XXX        XXX        XXX        XXX            &U_MS_L    &U_MS_D   &U_MS_U    &U_MS_R        XXX     XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         │   X      │   X      │   X      │   X      │   X      │   │   X      │   X      │   X      │   X      │   X      │
    XXX     XXX        XXX        XXX        XXX        XXX             XXX        XXX        XXX        XXX        XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │   TO BASE  │   │   LCLICK   │    MCLICK    │    RCLICK   │
-                            XXX           XXX        &to LINUX         U_BTN1        U_BTN2         U_BTN3 
+                            XXX           XXX        &to LINUX         &U_BTN1       &U_BTN2        &U_BTN3 
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
