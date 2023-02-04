@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
+// -----------------------------------------------------------------------------------------
+// define layout
+
 #define LINUX  0
 #define SYM    1
 #define NAV    2
@@ -19,6 +22,7 @@
 #define THAI1  6
 #define THAI2  7
 
+// -----------------------------------------------------------------------------------------
 #define LTS(k1)  &lt SYM k1
 #define LTN(k1)  &lt NAV k1
 #define LTM(k1)  &lt MEDIA k1
@@ -386,17 +390,17 @@
                         label = "RAT";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │   X      │   X      │   X      │   X      │   X      │   │   X      │   X      │  MOVE_UP │   X      │   X      │
-   XXX     XXX        XXX        XXX        XXX        XXX             XXX        XXX       U_MS_U      XXX        XXX       XXX
+//      │   X      │   X      │   X      │   X      │   X      │   │   ESC    │   X      │  MOVE_UP │   X      │   X      │
+   XXX     XXX        XXX        XXX        XXX        XXX            &kp ESC     XXX       U_MS_U      XXX        XXX       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   X      │   X      │   X      │   X      │   X      │   │   X      │ MOVE_LEFT│ MOVE_DOWN│MOVE_RIGHT│   X      │
-   XXX     XXX        XXX        XXX        XXX        XXX            XXX        U_MS_L    U_MS_D     U_MS_R       XXX       XXX
+   XXX     HRL                                         XXX            XXX        U_MS_L    U_MS_D     U_MS_R       XXX       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   X      │   X      │   X      │   X      │   X      │   │   X      │  PG_DN   │  PG_UP   │   X      │   X      │
    XXX     XXX        XXX        XXX        XXX        XXX             XXX      &kp PG_DN  &kp PG_UP    XXX        XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │   TO BASE  │   │   LCLICK   │    MCLICK    │    RCLICK   │
+//                    │      X      │      X      │   TO BASE  │   │   LCLICK   │    RCLICK    │    MCLICK   │
                             XXX           XXX        &to LINUX         U_BTN1        U_BTN2         U_BTN3 
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
