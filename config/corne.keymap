@@ -32,7 +32,7 @@
 #define HRR &kp RMETA &kp RALT &kp RCTRL &kp RSHIFT
 
 // -----------------------------------------------------------------------------------------
-
+// define MOUSE properties
 
 #define U_MOUSE_MOVE_MAX 1250
 #define U_MOUSE_MOVE_EXPONENT 1
@@ -43,7 +43,6 @@
 #undef MOVE_DOWN
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
-
 
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
@@ -65,9 +64,7 @@
 #define U_MS_U &mmv MOVE_UP
 
 // -----------------------------------------------------------------------------------------
-
 / {
-
 // -----------------------------------------------------------------------------------------
         behaviors {
 // -----------------------------------------------------------------------------------------
@@ -322,11 +319,11 @@
                         label = "NAV";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │  THAI1   │  X       │  MOUSE   │  X       │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    &to THAI1   XXX      &to MOUSE    XXX       &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+//      │  THAI1   │  X       │  MOUSE   │  MEDIA   │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
+   XXX    &to THAI1   XXX      &to MOUSE   &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  MEDIA   │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
-   XXX      HRL                                       &to MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
+//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │    X     │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
+   XXX      HRL                                         XXX          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  BASE    │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
    XXX    XXX         XXX        XXX        XXX       &to LINUX      &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
@@ -386,7 +383,7 @@
 // -----------------------------------------------------------------------------------------
                 mouse_layer {
 // -----------------------------------------------------------------------------------------
-                        label = "MOUSE";
+                        label = "RAT";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │   X      │   X      │   X      │   X      │   X      │   │   X      │   X      │   X      │   X      │   X      │
@@ -399,12 +396,8 @@
    XXX     XXX        XXX        XXX        XXX        XXX             XXX        XXX        XXX        XXX        XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │   TO BASE  │   │     X      │      X       │      X      │
-                            XXX           XXX        &to LINUX          XXX           XXX            XXX
-//                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
-//                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │   TO BASE  │   │   LCLICK   │    MCLICK    │    RCLICK   │
-//                          XXX           XXX        &to LINUX         U_BTN1        U_BTN2         U_BTN3 
+                            XXX           XXX        &to LINUX         U_BTN1        U_BTN2         U_BTN3 
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
