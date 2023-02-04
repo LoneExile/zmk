@@ -42,6 +42,15 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+// -----------------------------------------------------------------------------------------
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
     };
 
 // -----------------------------------------------------------------------------------------
