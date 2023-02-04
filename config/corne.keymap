@@ -62,6 +62,11 @@
             key-positions = <19 20>;
             bindings = <&kp ESC>;
         };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <20 19>;
+            bindings = <&kp ESC>;
+        };
     };
 
 // -----------------------------------------------------------------------------------------
@@ -84,8 +89,8 @@
    XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │     TAB     │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │     DEL     │
-                          &kp TAB      LTS(SPACE)     LTN(ESC)        &kp RET      &kp BSPC        &kp DEL
+//                    │     X       │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │      X      │
+                           XXX         LTS(SPACE)     LTN(ESC)        &kp RET     &kp bspc_del       XXX  
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
