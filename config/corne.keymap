@@ -9,15 +9,16 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
-#include "mousekeyspr.dtsi"
+#include "./mousekeyspr.dtsi"
 
 #define LINUX  0
 #define SYM    1
 #define NAV    2
 #define MEDIA  3
 #define FN     4
-#define THAI1  5
-#define THAI2  6
+#define MOUSE  5
+#define THAI1  6
+#define THAI2  7
 
 #define LTS(k1)  &lt SYM k1
 #define LTN(k1)  &lt NAV k1
@@ -325,8 +326,8 @@
                         label = "NAV";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │  THAI1   │  X       │  X       │  X       │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    &to THAI1   XXX        XXX        XXX       &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+//      │  THAI1   │  X       │  MOUSE   │  X       │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
+   XXX    &to THAI1   XXX      &to MOUSE    XXX       &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  MEDIA   │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
    XXX      HRL                                       &to MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
@@ -382,6 +383,28 @@
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │   TO BASE  │   │     X      │      X       │      X      │
                             XXX           XXX        &to LINUX          XXX           XXX            XXX
+//                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
+                        >;
+                };
+
+// -----------------------------------------------------------------------------------------
+                mouse_layer {
+// -----------------------------------------------------------------------------------------
+                        label = "MOUSE";
+                        bindings = <
+//      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+//      │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
+   XXX    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P       XXX
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ' "     │
+   XXX   HRML(A,      S,         D,         F)         &kp G         U_MS_U      HRMR(J,     K,         L,         APOS)      XXX
+//      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │
+   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
+//      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
+//                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
+//                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
+                           XXX        &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
