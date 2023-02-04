@@ -166,27 +166,27 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        lpar_0: lpar_0 {
+        lpar_rpar: lpar_rpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "LPAR_0";
+            label = "LPAR_RPAR";
             #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp KP_N0>;
+            bindings = <&kp LPAR>, <&kp RPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        plus_tilde: plus_tilde {
+        plus_0: plus_0 {
             compatible = "zmk,behavior-mod-morph";
-            label = "PLUS_TILDE";
+            label = "PLUS_0";
             #binding-cells = <0>;
-            bindings = <&kp PLUS>, <&kp TILDE>;
+            bindings = <&kp PLUS>, <&kp KP_N0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        caret_fslh: caret_fslh {
+        caret_tilde: caret_tilde {
             compatible = "zmk,behavior-mod-morph";
-            label = "CARET_FSLH";
+            label = "CARET_TILDE";
             #binding-cells = <0>;
-            bindings = <&kp CARET>, <&kp FSLH>;
+            bindings = <&kp CARET>, <&kp TILDE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
@@ -252,15 +252,15 @@
 //      │  X       │  X       │  X       │  X       │  X       │   │   [ {    │   & 7    │   # 8    │   ` 9    │   ] }    │
    XXX    XXX         XXX        XXX        XXX        XXX          &kp LBKT    &amps_7     &hash_8   &grave_9   &kp RBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   ^ /    │   = 4    │   % 5    │   6 $    │  ; :     │
-   XXX      HRL                                        XXX         &caret_fslh  &equal_4   &prcnt_5   &dllr_6    &kp SEMI    XXX 
+//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   ^ ~    │   = 4    │   % 5    │   6 $    │  ; :     │
+   XXX      HRL                                        XXX         &caret_tilde  &equal_4   &prcnt_5   &dllr_6    &kp SEMI    XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  X       │  X       │  X       │  X       │  X       │   │    + ~   │   ! 1    │   * 2    │   @ 3    │   \ |    │
-   XXX    XXX         XXX        XXX        XXX        XXX          &plus_tilde  &excl_1   &star_2     &at_3     &kp BSLH   XXX
+//      │  X       │  X       │  X       │  X       │  X       │   │    + 0   │   ! 1    │   * 2    │   @ 3    │   \ |    │
+   XXX    XXX         XXX        XXX        XXX        XXX            &plus_0    &excl_1   &star_2     &at_3     &kp BSLH   XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │  SPACE/SYM  │     X      │   │    _ -     │    ( 0       │    )        │
-                            XXX        LTS(SPACE)      XXX            &kp MINUS     &lpar_0       &kp RPAR
+//                    │      X      │  SPACE/SYM  │     X      │   │    - _     │    ( )       │    X        │
+                            XXX        LTS(SPACE)      XXX            &kp MINUS     &lpar_rpar     XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -304,8 +304,8 @@
    XXX    XXX         XXX        XXX        XXX        XXX             &kp C_REWIND             XXX                    XXX         &kp C_FAST_FORWARD    XXX           XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰─────────────────┴──────────────────────┴─────────────────────┴────────────────┴────────────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │  TAB/MEDIA  │      X      │  TO BASE   │   │  Mute      │  Play/Pause  │    X        │
-                           LTM(TAB)       XXX        &to LINUX       &kp C_MUTE     &kp C_PP       XXX
+//                    │    X        │      X      │  TO BASE   │   │  Mute      │  Play/Pause  │    X        │
+                          XXX             XXX        &to LINUX       &kp C_MUTE     &kp C_PP       XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -326,8 +326,8 @@
    XXX    &kp F10    &kp F1     &kp F2     &kp F3  &kp PAUSE_BREAK   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 5   XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────────┴─────────────┴──────────────┴──────────────┴──────────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │   TO BASE  │   │     X      │      X       │   DEL/FN    │
-                            XXX           XXX        &to LINUX          XXX           XXX          LTF(DEL)
+//                    │      X      │      X      │   TO BASE  │   │     X      │      X       │      X      │
+                            XXX           XXX        &to LINUX          XXX           XXX            XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
