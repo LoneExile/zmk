@@ -94,6 +94,7 @@
         };
     };
 // -----------------------------------------------------------------------------------------
+// MORPH NUM LAYER
         excl_1: excl_1 {
             compatible = "zmk,behavior-mod-morph";
             label = "EXCL_1";
@@ -192,6 +193,19 @@
         };
 
 // -----------------------------------------------------------------------------------------
+// MORPH THAI LAYER
+        htt: ht_thai {
+            label = "hold_tap_thai1";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&mo>, <&kp>;
+        };
+
+// -----------------------------------------------------------------------------------------
         macros {
 // -----------------------------------------------------------------------------------------
         thumb_tap: thumb_tap {
@@ -253,10 +267,10 @@
    XXX    XXX         XXX        XXX        XXX        XXX          &kp LBKT    &amps_7     &hash_8   &grave_9   &kp RBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   ^ ~    │   = 4    │   % 5    │   6 $    │  ; :     │
-   XXX      HRL                                        XXX         &caret_tilde  &equal_4   &prcnt_5   &dllr_6    &kp SEMI    XXX 
+   XXX      HRL                                        XXX         &caret_tilde  &equal_4   &prcnt_5   &dllr_6    &kp SEMI   XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │    + 0   │   ! 1    │   * 2    │   @ 3    │   \ |    │
-   XXX    XXX         XXX        XXX        XXX        XXX            &plus_0    &excl_1   &star_2     &at_3     &kp BSLH   XXX
+   XXX    XXX         XXX        XXX        XXX        XXX            &plus_0    &excl_1   &star_2     &at_3     &kp BSLH    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │  SPACE/SYM  │     X      │   │    - _     │    ( )       │    X        │
@@ -271,14 +285,14 @@
                         label = "NAV";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │  X       │  X       │  X       │  X       │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    XXX         XXX        XXX        XXX       &tog FN       &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+//      │  THAI1   │  X       │  X       │  X       │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
+   XXX   &tog THAI1   XXX        XXX        XXX       &tog FN       &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  MEDIA   │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
-   XXX      HRL                                      &tog MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word    XXX 
+   XXX      HRL                                      &tog MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  X       │  X       │  X       │  X       │  X       │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
-   XXX    XXX         XXX        XXX        XXX        XXX           &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
+//      │  X       │  X       │  X       │  X       │  BASE    │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
+   XXX    XXX         XXX        XXX        XXX       &to LINUX      &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │   ESC/NAV  │   │     X      │       X      │     X       │
@@ -342,14 +356,14 @@
    XXX    &kp DOT     &kp N9      &kp S    &kp RBKT    &kp L          &kp X      &kp Y       &kp D      &kp B    &kp LBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │    '          g          i          o          ,              v          k           j          h         ;
-   XXX    &kp APOS    &kp G      &kp I      &kp O     &kp COMMA       &kp V      &kp K       &kp J      &kp H     &kp SEMI   XXX
+   XXX &htt THAI2 APOS &kp G      &kp I      &kp O     &kp COMMA       &kp V      &kp K       &kp J      &kp H     &kp SEMI   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   6           w          m          p          0              8          u           f          t         ^
    XXX    &kp 6       &kp W      &kp M      &kp P      &kp N0         &kp N8     &kp U       &kp F      &kp T     &kp CARET  XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │  TAB/MEDIA  │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │  DEL/FN     │
-                          LTM(TAB)     LTS(SPACE)     LTN(ESC)        &kp RET      &kp BSPC       LTF(DEL)
+//                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
+                           XXX        &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -364,14 +378,14 @@
    XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)  &kp LS(A)      &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)  XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │     K    │    5     │     c    │    =     │   r      │   │     z    │     e    │     -    │  F       │    4     │
-   XXX    &kp LS(K)  &kp N5      &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F)  &kp N4     XXX
+   XXX &htt THAI2 LS(K) &kp N5      &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F)  &kp N4     XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  A       │     /    │    q     │     I    │     U    │   │     J    │    N     │    L     │    V     │    W     │
    XXX    &kp LS(A)  &kp SLASH   &kp Q     &kp LS(I)  &kp LS(U)      &kp LS(J)  &kp LS(N)  &kp LS(L)  &kp LS(V)  &kp LS(W)  XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │  TAB/MEDIA  │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │  DEL/FN     │
-                           LTM(TAB)    LTS(SPACE)     LTN(ESC)        &kp RET      &kp BSPC       LTF(DEL)
+//                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
+                           XXX        &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
