@@ -26,6 +26,8 @@
 
 #define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LCTRL k2 &ht LALT k3 &ht LMETA  k4
 #define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL  k3 &ht RSHIFT k4
+#define HRL &kp LSHIFT &kp LCTRL &kp LALT &kp LMETA
+#define HRR &kp RMETA &kp RALT &kp RCTRL &kp RSHIFT
 
 / {
 
@@ -208,7 +210,7 @@
         combos {
 // -----------------------------------------------------------------------------------------
         compatible = "zmk,combos";
-        combo_esc {
+        combo_jk_esc {
             timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&kp ESC>;
@@ -251,7 +253,7 @@
    XXX    XXX         XXX        XXX        XXX        XXX          &kp LBKT    &amps_7     &hash_8   &grave_9   &kp RBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   ^ /    │   = 4    │   % 5    │   6 $    │  ; :     │
-   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX           &caret_fslh  &equal_4   &prcnt_5   &dllr_6    &kp SEMI    XXX 
+   XXX      HRL                                        XXX         &caret_fslh  &equal_4   &prcnt_5   &dllr_6    &kp SEMI    XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │    + ~   │   ! 1    │   * 2    │   @ 3    │   \ |    │
    XXX    XXX         XXX        XXX        XXX        XXX          &plus_tilde  &excl_1   &star_2     &at_3     &kp BSLH   XXX
@@ -273,7 +275,7 @@
    XXX    XXX         XXX        XXX        XXX       &tog FN       &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  MEDIA   │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
-   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA  &tog MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word    XXX 
+   XXX      HRL                                      &tog MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word    XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
    XXX    XXX         XXX        XXX        XXX        XXX           &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
@@ -296,7 +298,7 @@
    XXX    XXX         XXX        XXX        XXX        XXX                XXX          &kp C_BRIGHTNESS_INC   &kp C_BRIGHTNESS_DEC       XXX             XXX           XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────────┼──────────────────────┼─────────────────────┼────────────────┼────────────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │      Prev       │       Vol down       │        Vol up       │      Next      │      X         │
-   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX               &kp C_PREV         &kp C_VOL_DN           &kp C_VOL_UP        &kp C_NEXT         XXX           XXX 
+   XXX    HRL                                          XXX              &kp C_PREV         &kp C_VOL_DN           &kp C_VOL_UP        &kp C_NEXT         XXX           XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────────┼──────────────────────┼─────────────────────┼────────────────┼────────────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │     REWIND      │           X          │           X         │      FFWD      │      X         │
    XXX    XXX         XXX        XXX        XXX        XXX             &kp C_REWIND             XXX                    XXX         &kp C_FAST_FORWARD    XXX           XXX
