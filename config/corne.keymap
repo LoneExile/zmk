@@ -92,6 +92,38 @@
         };
     };
 // -----------------------------------------------------------------------------------------
+        excl_1: excl_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXCL_1";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp KP_N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+        star_2: star_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "STAR_1";
+            #binding-cells = <0>;
+            bindings = <&kp STAR>, <&kp KP_N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+        at_3: at_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AT_3";
+            #binding-cells = <0>;
+            bindings = <&kp AT>, <&kp KP_N3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+        equal_4: equal_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_4";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp KP_N4>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
         amps_7: amps_7 {
             compatible = "zmk,behavior-mod-morph";
             label = "AMPS_7";
@@ -163,11 +195,11 @@
    XXX    XXX         XXX        XXX        XXX        XXX          &kp LBKT    &amps_7     &kp N8     &kp N9     &kp RBKT    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   = +    │   4 $    │   5 %    │   6 ^    │  ; :     │
-   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX           &kp EQUAL   &kp N4     &kp N5     &kp N6     &kp SEMI    XXX 
+   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA   XXX           &kp EQUAL   &equal_4     &kp N5     &kp N6     &kp SEMI    XXX 
 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │    \ |   │   1 !    │   2 @    │   3 #    │   ` ~    │
-   XXX    XXX         XXX        XXX        XXX        XXX           &kp BSLH   &kp N1     &kp N2      &kp N3    &kp GRAVE   XXX
+   XXX    XXX         XXX        XXX        XXX        XXX           &kp BSLH   &excl_1    &star_2     &at_3     &kp GRAVE   XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │  SPACE/SYM  │     X      │   │    _ -     │    0 )       │    (        │
