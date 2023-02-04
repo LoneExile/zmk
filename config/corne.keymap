@@ -109,7 +109,7 @@
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     X       │  SPACE/SYM  │   ESC/NAV  │   │    RET     │    BSPC      │      X      │
-                         &thumb_tap    LTS(SPACE)     LTN(ESC)        &kp RET      &bspc_del         XXX
+                           XXX         LTS(SPACE)     LTN(ESC)        &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -146,7 +146,7 @@
    XXX    XXX         XXX        XXX        XXX       &tog FN       &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  MEDIA   │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
-   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA  &tog MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT  &kp CAPS    XXX 
+   XXX   &kp LSHIFT &kp LCTRL  &kp LALT   &kp LMETA  &tog MEDIA      &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word    XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
    XXX    XXX         XXX        XXX        XXX        XXX           &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
