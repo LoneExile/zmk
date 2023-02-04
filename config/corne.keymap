@@ -96,7 +96,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "AMPS_7";
             #binding-cells = <0>;
-            bindings = <&kp AMPS>, <&kp N7>;
+            bindings = <&kp AMPS>, <&kp KP_N7>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
