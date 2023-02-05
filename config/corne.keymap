@@ -253,6 +253,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+        nine_d: nine_d {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_D";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N9>, <&kp LS(D)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
 
 // -----------------------------------------------------------------------------------------
         macros {
@@ -469,7 +477,7 @@
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │    .     │    9     │    s     │    ]     │     l    │   │    x     │    y     │      d   │     b    │    [     │
 //      │   <      │    D     │     :    │  P       │   A      │   │  C       │   7      │    T     │    {     │   H      │
-//   XXX    &dot_lt    &nine_D       &s_colon   &rbkt_P     &l_A          &x_C        &y_7      &d_T       &b_lbrc    &lbkt_H      XXX
+//   XXX    &dot_lt    &nine_d       &s_colon   &rbkt_P     &l_A          &x_C        &y_7      &d_T       &b_lbrc    &lbkt_H      XXX
    XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)   &kp A         &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │    '          g          i          o          ,              v          k           j          h         ;
