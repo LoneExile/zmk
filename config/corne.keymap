@@ -244,6 +244,16 @@
             global-quick-tap;
             bindings = <&kp>, <&apos_k>;
         };
+        httr: ht_thai_right {
+            label = "hold_tap_thai_right";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            global-quick-tap;
+            bindings = <&kp>, <&semi_4>;
+        };
         
         dot_lt: dot_lt {
             compatible = "zmk,behavior-mod-morph";
@@ -662,7 +672,7 @@
    XXX    &dot_lt    &nine_d       &s_colon   &rbkt_p     &l_a          &x_c        &y_7      &d_t       &b_lbrc    &lbkt_h      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   ' K    │    g 5   │    i c   │    o =   │   , r    │   │     v z  │    k e   │    j -   │  h F     │    ; 4   │
-   XXX  &httl LSHIFT 0    &g_5       &i_c       &o_equal    &comma_r      &v_z       &k_e       &j_minus   &h_f      &semi_4       XXX
+   XXX  &httl LSHIFT 0    &g_5       &i_c       &o_equal    &comma_r      &v_z       &k_e       &j_minus   &h_f  &httr RSHIFT 0  XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  6 A     │    w /   │    m q   │    p I   │    0 U   │   │     8 J  │    u N   │    f L   │    t V   │    ^ W   │
    XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v       &caret_w     XXX
