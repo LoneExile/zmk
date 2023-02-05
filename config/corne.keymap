@@ -704,18 +704,15 @@
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │    .     │    9     │    s     │    ]     │     l    │   │    x     │    y     │      d   │     b    │    [     │
 //      │   <      │    D     │     :    │  P       │   A      │   │  C       │   7      │    T     │    {     │   H      │
-//   XXX    &dot_lt    &nine_d       &s_colon   &rbkt_p     &l_a          &x_c        &y_7      &d_t       &b_lbrc    &lbkt_h      XXX
-   XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)   &kp A         &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)      XXX
+   XXX    &dot_lt    &nine_d       &s_colon   &rbkt_p     &l_a          &x_c        &y_7      &d_t       &b_lbrc    &lbkt_h      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │    '          g          i          o          ,              v          k           j          h         ;
 //      │     K    │    5     │     c    │    =     │   r      │   │     z    │     e    │     -    │  F       │    4     │
-//   XXX    &apos_k    &g_5       &i_c       &o_equal    &comma_r      &v_z       &k_e       &j_minus   &h_f      &semi_4       XXX
-   XXX &htt THAI2 LS(K) &kp N5    &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F) &htt THAI2 N4  XXX
+   XXX    &apos_k    &g_5       &i_c       &o_equal    &comma_r      &v_z       &k_e       &j_minus   &h_f      &semi_4       XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   6           w          m          p          0              8          u           f          t         ^
 //      │  A       │     /    │    q     │     I    │     U    │   │     J    │    N     │    L     │    V     │    W     │
-//   XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v       &caret_w     XXX
-   XXX    &kp LS(A)  &kp SLASH   &kp Q     &kp LS(I)  &kp LS(U)      &kp LS(J)  &kp LS(N)  &kp LS(L)  &kp LS(V)  &kp LS(W)      XXX
+   XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v       &caret_w     XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
