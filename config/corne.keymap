@@ -67,6 +67,7 @@
 #define U_MS_U &mmv MOVE_UP
 
 #define TAPPING_TERM_MS 200
+#define QUICK_TAP_MS 125
 
 // -----------------------------------------------------------------------------------------
 / {
@@ -78,9 +79,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            //tapping-term-ms = <200>;
             tapping-term-ms = <TAPPING_TERM_MS>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <QUICK_TAP_MS>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -100,8 +100,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
             global-quick-tap;
             bindings = <&mo>, <&space_tab>;
         };
@@ -119,8 +119,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
             global-quick-tap;
             bindings = <&mo>, <&esc_stab>;
         };
@@ -234,6 +234,17 @@
 
 // -----------------------------------------------------------------------------------------
 // MORPH THAI LAYER
+        httl: ht_thai_left {
+            label = "hold_tap_space_tab";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            global-quick-tap;
+            bindings = <&kp>, <&apos_k>;
+        };
+        // &httl LSHIFT 0
         
         dot_lt: dot_lt {
             compatible = "zmk,behavior-mod-morph";
