@@ -21,14 +21,18 @@
 #define FN     5
 #define MOUSE  6
 
+#define XXX &none
+
 // -----------------------------------------------------------------------------------------
+// define Layer-tap
+
 #define LTS(k1)  &lt SYM k1
 #define LTN(k1)  &lt NAV k1
 #define LTM(k1)  &lt MEDIA k1
-#define LTF(k1)  &lt FN DEL
+#define LTF(k1)  &lt FN k1
 
-#define XXX &none
-
+// -----------------------------------------------------------------------------------------
+// define Home-row modifiers
 #define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LCTRL k2 &ht LALT k3 &ht LMETA  k4
 #define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL  k3 &ht RSHIFT k4
 #define HRL &kp LSHIFT &kp LCTRL &kp LALT &kp LMETA
@@ -65,6 +69,9 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 #define U_MS_U &mmv MOVE_UP
+
+// -----------------------------------------------------------------------------------------
+// define Hold-tap properties
 
 #define TAPPING_TERM_MS 200
 #define QUICK_TAP_MS 125
@@ -234,6 +241,9 @@
 
 // -----------------------------------------------------------------------------------------
 // MORPH THAI LAYER
+
+//      SHIFT HOLD TAP MORPH
+
         httl: ht_thai_left {
             label = "hold_tap_thai_left";
             compatible = "zmk,behavior-hold-tap";
@@ -254,6 +264,8 @@
             global-quick-tap;
             bindings = <&kp>, <&semi_4>;
         };
+
+//      MORPH
         
         dot_lt: dot_lt {
             compatible = "zmk,behavior-mod-morph";
@@ -416,8 +428,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-
-
         six_a: six_a {
             compatible = "zmk,behavior-mod-morph";
             label = "SIX_A";
