@@ -570,7 +570,7 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │  THAI    │  X       │  MOUSE   │  MEDIA   │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    &to THAI    XXX      &to MOUSE   &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+   XXX    &tog THAI    XXX      &to MOUSE   &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │    X     │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
    XXX      HRL                                         XXX          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
