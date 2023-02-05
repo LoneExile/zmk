@@ -66,6 +66,8 @@
 #define U_MS_R &mmv MOVE_RIGHT
 #define U_MS_U &mmv MOVE_UP
 
+#define TAPPING_TERM_MS 200
+
 // -----------------------------------------------------------------------------------------
 / {
 // -----------------------------------------------------------------------------------------
@@ -76,7 +78,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            //tapping-term-ms = <200>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -231,17 +234,6 @@
 
 // -----------------------------------------------------------------------------------------
 // MORPH THAI LAYER
-        htt: ht_thai {
-            label = "hold_tap_thai1";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&mo>, <&kp>;
-        };
-
         
         dot_lt: dot_lt {
             compatible = "zmk,behavior-mod-morph";
