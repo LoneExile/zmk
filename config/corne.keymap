@@ -269,6 +269,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+        rbkt_P: rbkt_P {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBKT_P";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp LS(P)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
 
 // -----------------------------------------------------------------------------------------
         macros {
