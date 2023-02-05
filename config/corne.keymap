@@ -253,30 +253,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        nine_D: nine_D {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NINE_D";
-            #binding-cells = <0>;
-            bindings = <&kp KP_N9>, <&kp LS(D)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-        s_colon: s_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "S_COLON";
-            #binding-cells = <0>;
-            bindings = <&kp S_COLON>, <&kp COLON>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-        rbkt_P: rbkt_P {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RBKT_P";
-            #binding-cells = <0>;
-            bindings = <&kp RBKT>, <&kp LS(P)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
 
 // -----------------------------------------------------------------------------------------
         macros {
