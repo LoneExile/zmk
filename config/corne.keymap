@@ -73,8 +73,8 @@
 // -----------------------------------------------------------------------------------------
 // define Hold-tap properties
 
-#define TAPPING_TERM_MS 200
-#define QUICK_TAP_MS 125
+#define TAPPING_TERM_MS 175
+#define QUICK_TAP_MS 150
 
 // -----------------------------------------------------------------------------------------
 / {
@@ -611,7 +611,7 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │  BASE    │   THAI   │  MOUSE   │  MEDIA   │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    &to LINUX  &tog THAI    &to MOUSE   &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+   XXX    &to LINUX  &tog THAI  &to MOUSE  &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │    X     │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
    XXX      HRL                                         XXX          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
@@ -621,7 +621,7 @@
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │   ESC/NAV  │   │     X      │       X      │     X       │
-                            XXX           XXX         LTN(ESC)          XXX           XXX           XXX
+                            XXX           XXX         tTN(ESC)          XXX           XXX           XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
