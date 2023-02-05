@@ -244,7 +244,6 @@
             bindings = <&mo>, <&kp>;
         };
 
-// XXX    &dot_lt    &9_D       &s_colon   &rbkt_P     &l_A          &x_C        &y_7      &d_T       &b_lbrc    &lbkt_H      XXX
         
         dot_lt: dot_lt {
             compatible = "zmk,behavior-mod-morph";
@@ -327,8 +326,6 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
-// XXX    &apos_K    &g_5       &i_c       &o_equal    &comma_R      &v_z       &k_e       &j_minus   &h_F      &semi_4       XXX
-
         apos_K: apos_K {
             compatible = "zmk,behavior-mod-morph";
             label = "APOS_K";
@@ -410,7 +407,6 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
-// XXX    &6_A       &w_slash    &m_q       &p_I       &0_U          &8_J       &u_N        &f_L       &t_V       &caret_W     XXX
 
         six_A: six_A {
             compatible = "zmk,behavior-mod-morph";
@@ -708,15 +704,18 @@
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │    .     │    9     │    s     │    ]     │     l    │   │    x     │    y     │      d   │     b    │    [     │
 //      │   <      │    D     │     :    │  P       │   A      │   │  C       │   7      │    T     │    {     │   H      │
-   XXX    &dot_lt    &nine_D       &s_colon   &rbkt_P     &l_A          &x_C        &y_7      &d_T       &b_lbrc    &lbkt_H      XXX
+//   XXX    &dot_lt    &nine_D       &s_colon   &rbkt_P     &l_A          &x_C        &y_7      &d_T       &b_lbrc    &lbkt_H      XXX
+   XXX    &kp LT     &kp LS(D)  &kp COLON  &kp LS(P)   &kp A         &kp LS(C)   &kp N7    &kp LS(T)  &kp LBRC   &kp LS(H)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │    '          g          i          o          ,              v          k           j          h         ;
 //      │     K    │    5     │     c    │    =     │   r      │   │     z    │     e    │     -    │  F       │    4     │
-   XXX    &apos_K    &g_5       &i_c       &o_equal    &comma_R      &v_z       &k_e       &j_minus   &h_F      &semi_4       XXX
+//   XXX    &apos_K    &g_5       &i_c       &o_equal    &comma_R      &v_z       &k_e       &j_minus   &h_F      &semi_4       XXX
+   XXX &htt THAI2 LS(K) &kp N5    &kp C     &kp EQUAL   &kp R           &kp Z      &kp E    &kp MINUS  &kp LS(F) &htt THAI2 N4  XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   6           w          m          p          0              8          u           f          t         ^
 //      │  A       │     /    │    q     │     I    │     U    │   │     J    │    N     │    L     │    V     │    W     │
-   XXX    &six_A       &w_slash    &m_q       &p_I     &zero_u       &eight_J     &u_N        &f_L       &t_V       &caret_W     XXX
+//   XXX    &six_A       &w_slash    &m_q       &p_I     &zero_u       &eight_J     &u_N        &f_L       &t_V       &caret_W     XXX
+   XXX    &kp LS(A)  &kp SLASH   &kp Q     &kp LS(I)  &kp LS(U)      &kp LS(J)  &kp LS(N)  &kp LS(L)  &kp LS(V)  &kp LS(W)      XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
