@@ -671,15 +671,15 @@
 //      │    .     │    9     │    s     │    ]     │     l    │   │    x     │    y     │      d   │     b    │    [     │
    XXX    &dot_lt    &nine_d       &s_colon   &rbkt_p     &l_a          &x_c        &y_7      &d_t       &b_lbrc    &lbkt_h      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │   ' K    │    g 5   │    i c   │    o =   │   , r    │   │     v z  │    k e   │    j -   │  h F     │    ; 4   │
-   XXX  &httl LSHIFT 0    &g_5       &i_c       &o_equal    &comma_r      &v_z       &k_e       &j_minus   &h_f  &httr RSHIFT 0  XXX
+//      │   ' K    │    g 5   │    i c   │    o =   │   , r    │   │   v z    │    k e   │   j -    │  h F     │    ; 4   │
+   XXX  &httl LSHIFT 0 &g_5       &i_c     &o_equal    &comma_r        &v_z       &k_e      &j_minus  &h_f     &httr RSHIFT 0    XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  6 A     │    w /   │    m q   │    p I   │    0 U   │   │     8 J  │    u N   │    f L   │    t V   │    ^ W   │
-   XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v       &caret_w     XXX
+   XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v     &caret_w       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
-                           XXX        &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
+//                    │  TO BASE    │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
+                         &to LINUX    &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
