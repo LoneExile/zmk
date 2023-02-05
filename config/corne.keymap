@@ -254,9 +254,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        9_D: 9_D {
+        nine_D: nine_D {
             compatible = "zmk,behavior-mod-morph";
-            label = "9_D";
+            label = "NINE_D";
             #binding-cells = <0>;
             bindings = <&kp KP_N9>, <&kp LS(D)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -444,17 +444,17 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        0_U: 0_U {
+        zero_u: zero_u {
             compatible = "zmk,behavior-mod-morph";
-            label = "0_U";
+            label = "ZERO_U";
             #binding-cells = <0>;
             bindings = <&kp KP_N0>, <&kp LS(U)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        8_J: 8_J {
+        eight_J: eight_J {
             compatible = "zmk,behavior-mod-morph";
-            label = "8_J";
+            label = "EIGHT_J";
             #binding-cells = <0>;
             bindings = <&kp KP_N8>, <&kp LS(J)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -708,7 +708,7 @@
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │    .     │    9     │    s     │    ]     │     l    │   │    x     │    y     │      d   │     b    │    [     │
 //      │   <      │    D     │     :    │  P       │   A      │   │  C       │   7      │    T     │    {     │   H      │
-   XXX    &dot_lt    &9_D       &s_colon   &rbkt_P     &l_A          &x_C        &y_7      &d_T       &b_lbrc    &lbkt_H      XXX
+   XXX    &dot_lt    &nine_D       &s_colon   &rbkt_P     &l_A          &x_C        &y_7      &d_T       &b_lbrc    &lbkt_H      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │    '          g          i          o          ,              v          k           j          h         ;
 //      │     K    │    5     │     c    │    =     │   r      │   │     z    │     e    │     -    │  F       │    4     │
@@ -716,7 +716,7 @@
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   6           w          m          p          0              8          u           f          t         ^
 //      │  A       │     /    │    q     │     I    │     U    │   │     J    │    N     │    L     │    V     │    W     │
-   XXX    &6_A       &w_slash    &m_q       &p_I       &0_U          &8_J       &u_N        &f_L       &t_V       &caret_W     XXX
+   XXX    &six_A       &w_slash    &m_q       &p_I     &zero_u       &eight_J     &u_N        &f_L       &t_V       &caret_W     XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     X       │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
