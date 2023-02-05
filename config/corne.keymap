@@ -557,7 +557,6 @@
                         label = "THAI";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │    .     │    9     │    s     │    ]     │     l    │   │    x     │    y     │      d   │     b    │    [     │
    XXX    &dot_lt    &nine_d    &s_colon   &rbkt_p      &l_a          &x_c        &y_7      &d_t       &b_lbrc    &lbkt_h      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │   ' K    │    g 5   │    i c   │    o =   │   , r    │   │   v z    │    k e   │   j -    │  h F     │    ; 4   │
@@ -567,8 +566,8 @@
    XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v     &caret_w     XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │  TO BASE    │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
-                         &to LINUX    &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
+//                    │    X        │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
+                          XXX         &htst SYM 0  &htest NAV 0       &kp RET      &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -601,14 +600,14 @@
                         label = "NAV";
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//      │  THAI    │  X       │  MOUSE   │  MEDIA   │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    &tog THAI    XXX      &to MOUSE   &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+//      │  BASE    │   THAI   │  MOUSE   │  MEDIA   │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
+   XXX    &to LINUX  &tog THAI    &to MOUSE   &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │    X     │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
    XXX      HRL                                         XXX          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  X       │  X       │  X       │  X       │  BASE    │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
-   XXX    XXX         XXX        XXX        XXX       &to LINUX      &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
+//      │  X       │  X       │  X       │  X       │    X     │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
+   XXX    XXX         XXX        XXX        XXX          XXX         &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │      X      │      X      │   ESC/NAV  │   │     X      │       X      │     X       │
