@@ -170,7 +170,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EQUAL_4";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp KP_N4>;
+            bindings = <&kp EQUAL>, <&kp N4>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
@@ -592,7 +592,7 @@
    XXX    XXX         XXX        XXX        XXX        XXX          &kp LBKT    &amps_7     &hash_8   &grave_9   &kp RBKT         XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  X       │   │   ^ ~    │   = 4    │   % 5    │   6 $    │  ; :     │
-   XXX      HRL                                        XXX         &caret_tilde  &equal_4   &prcnt_5   &dllr_6  &ht LSHIFT SEMI   XXX 
+   XXX      HRL                                        XXX         &caret_tilde  &equal_4   &prcnt_5   &dllr_6   &kp SEMI         XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │  X       │   │    + 0   │   ! 1    │   * 2    │   @ 3    │   \ |    │
    XXX    XXX         XXX        XXX        XXX        XXX            &plus_0    &excl_1   &star_2     &at_3     &kp BSLH         XXX
