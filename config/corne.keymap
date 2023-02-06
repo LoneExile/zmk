@@ -178,7 +178,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PRCNT_5";
             #binding-cells = <0>;
-            bindings = <&kp PRCNT>, <&kp KP_N5>;
+            bindings = <&kp PRCNT>, <&kp LS(KP_N5)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
