@@ -148,7 +148,6 @@
             #binding-cells = <0>;
             bindings = <&kp EXCL>, <&kp N1>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         star_2: star_2 {
             compatible = "zmk,behavior-mod-morph";
@@ -156,7 +155,6 @@
             #binding-cells = <0>;
             bindings = <&kp STAR>, <&kp N2>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         at_3: at_3 {
             compatible = "zmk,behavior-mod-morph";
@@ -164,7 +162,6 @@
             #binding-cells = <0>;
             bindings = <&kp AT>, <&kp N3>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         equal_4: equal_4 {
             compatible = "zmk,behavior-mod-morph";
@@ -172,7 +169,6 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp N4>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         prcnt_5: prcnt_5 {
             compatible = "zmk,behavior-mod-morph";
@@ -180,7 +176,6 @@
             #binding-cells = <0>;
             bindings = <&kp PRCNT>, <&kp N5>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         dllr_6: dllr_6 {
             compatible = "zmk,behavior-mod-morph";
@@ -188,7 +183,6 @@
             #binding-cells = <0>;
             bindings = <&kp DLLR>, <&kp N6>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         amps_7: amps_7 {
             compatible = "zmk,behavior-mod-morph";
@@ -196,7 +190,6 @@
             #binding-cells = <0>;
             bindings = <&kp AMPS>, <&kp N7>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         hash_8: hash_8 {
             compatible = "zmk,behavior-mod-morph";
@@ -204,7 +197,6 @@
             #binding-cells = <0>;
             bindings = <&kp HASH>, <&kp N8>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         grave_9: grave_9 {
             compatible = "zmk,behavior-mod-morph";
@@ -212,7 +204,6 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp N9>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         lpar_rpar: lpar_rpar {
             compatible = "zmk,behavior-mod-morph";
