@@ -291,7 +291,6 @@
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         nine_d: nine_d {
             compatible = "zmk,behavior-mod-morph";
@@ -299,7 +298,6 @@
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp LS(D)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         s_colon: s_colon {
             compatible = "zmk,behavior-mod-morph";
@@ -307,7 +305,6 @@
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         rbkt_p: rbkt_p {
             compatible = "zmk,behavior-mod-morph";
@@ -315,7 +312,6 @@
             #binding-cells = <0>;
             bindings = <&kp RBKT>, <&kp LS(P)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         l_a: l_a {
             compatible = "zmk,behavior-mod-morph";
@@ -323,7 +319,6 @@
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp A>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         x_c: x_c {
             compatible = "zmk,behavior-mod-morph";
@@ -331,7 +326,6 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp LS(C)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         y_7: y_7 {
             compatible = "zmk,behavior-mod-morph";
@@ -339,7 +333,6 @@
             #binding-cells = <0>;
             bindings = <&kp Y>, <&kp N7>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         d_t: d_t {
             compatible = "zmk,behavior-mod-morph";
@@ -347,7 +340,6 @@
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp LS(T)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         b_lbrc: b_lbrc {
             compatible = "zmk,behavior-mod-morph";
@@ -355,7 +347,6 @@
             #binding-cells = <0>;
             bindings = <&kp B>, <&kp LBRC>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         lbkt_h: lbkt_h {
             compatible = "zmk,behavior-mod-morph";
@@ -363,7 +354,6 @@
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp LS(H)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
 
         apos_k: apos_k {
@@ -372,7 +362,6 @@
             #binding-cells = <0>;
             bindings = <&kp APOS>, <&kp LS(K)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         g_5: g_5 {
             compatible = "zmk,behavior-mod-morph";
@@ -380,7 +369,6 @@
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp N5>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         i_c: i_c {
             compatible = "zmk,behavior-mod-morph";
@@ -388,7 +376,6 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp C>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         o_equal: o_equal {
             compatible = "zmk,behavior-mod-morph";
@@ -396,7 +383,6 @@
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         comma_r: comma_r {
             compatible = "zmk,behavior-mod-morph";
@@ -404,7 +390,6 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LS(R)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         v_z: v_z {
             compatible = "zmk,behavior-mod-morph";
@@ -412,7 +397,6 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp Z>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         k_e: k_e {
             compatible = "zmk,behavior-mod-morph";
@@ -420,7 +404,6 @@
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp E>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         j_minus: j_minus {
             compatible = "zmk,behavior-mod-morph";
@@ -428,7 +411,6 @@
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp MINUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         h_f: h_f {
             compatible = "zmk,behavior-mod-morph";
@@ -436,7 +418,6 @@
             #binding-cells = <0>;
             bindings = <&kp H>, <&kp LS(F)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         semi_4: semi_4 {
             compatible = "zmk,behavior-mod-morph";
@@ -444,7 +425,6 @@
             #binding-cells = <0>;
             bindings = <&kp SEMI>, <&kp N4>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         six_a: six_a {
             compatible = "zmk,behavior-mod-morph";
@@ -452,7 +432,6 @@
             #binding-cells = <0>;
             bindings = <&kp N6>, <&kp LS(A)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         w_slash: w_slash {
             compatible = "zmk,behavior-mod-morph";
@@ -460,7 +439,6 @@
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp SLASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         m_q: m_q {
             compatible = "zmk,behavior-mod-morph";
@@ -468,7 +446,6 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp Q>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         p_i: p_i {
             compatible = "zmk,behavior-mod-morph";
@@ -476,7 +453,6 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp I>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         zero_u: zero_u {
             compatible = "zmk,behavior-mod-morph";
@@ -484,7 +460,6 @@
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp LS(U)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         eight_j: eight_j {
             compatible = "zmk,behavior-mod-morph";
@@ -492,7 +467,6 @@
             #binding-cells = <0>;
             bindings = <&kp N8>, <&kp LS(J)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         u_n: u_n {
             compatible = "zmk,behavior-mod-morph";
@@ -500,7 +474,6 @@
             #binding-cells = <0>;
             bindings = <&kp U>, <&kp LS(N)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         f_l: f_l {
             compatible = "zmk,behavior-mod-morph";
@@ -508,7 +481,6 @@
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp LS(L)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
         t_v: t_v {
             compatible = "zmk,behavior-mod-morph";
@@ -516,15 +488,13 @@
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp LS(V)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
-        caret_w: caret_w {
+        caret_n: caret_n {
             compatible = "zmk,behavior-mod-morph";
-            label = "CARET_W";
+            label = "CARET_N";
             #binding-cells = <0>;
-            bindings = <&kp CARET>, <&kp LS(W)>;
+            bindings = <&kp CARET>, <&kp W>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
 
 // -----------------------------------------------------------------------------------------
@@ -591,7 +561,7 @@
    XXX  &httl LSHIFT 0 &g_5       &i_c     &o_equal    &comma_r        &v_z       &k_e      &j_minus  &h_f     &httr RSHIFT 0  XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  6 A     │    w /   │    m q   │    p I   │    0 U   │   │     8 J  │    u N   │    f L   │    t V   │    ^ W 
-   XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v     &caret_w     XXX
+   XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v     &caret_n     XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    X        │SPACE/SYM/TAB│ESC/NAV/STAB│   │    RET     │    BSPC      │      X      │
