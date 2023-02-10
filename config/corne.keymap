@@ -73,7 +73,7 @@
 // -----------------------------------------------------------------------------------------
 // define Hold-tap properties
 
-#define TAPPING_TERM_MS 175
+#define TAPPING_TERM_MS 150
 #define QUICK_TAP_MS 150
 
 // -----------------------------------------------------------------------------------------
@@ -122,6 +122,24 @@
         };
 
         htest: ht_esc_stab {
+            label = "hold_tap_esc_stab";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            global-quick-tap;
+            bindings = <&mo>, <&esc_stab>;
+        };
+        esc_stab: esc_stab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_STAB";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp LS(TAB)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+        htbsr: ht_bspc_sret {
             label = "hold_tap_esc_stab";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
