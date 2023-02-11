@@ -545,6 +545,11 @@
             key-positions = <14 26>;
             bindings = <&kp GRAVE>;
         };
+        combo_hash {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <03 15>;
+            bindings = <&kp HASH>;
+        };
         combo_bslh {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <15 27>;
