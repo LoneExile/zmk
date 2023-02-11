@@ -509,7 +509,7 @@
         compatible = "zmk,combos";
         combo_excl {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <01 02>;
+            key-positions = <01 13>;
             bindings = <&kp EXCL>;
         };
         combo_esc {
@@ -549,7 +549,7 @@
         };
         combo_nuhs { // #
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <13 15>;
+            key-positions = <03 15>;
             bindings = <&kp NUHS>;
         };
         combo_bslh { // \
@@ -592,6 +592,11 @@
             key-positions = <26 28>;
             bindings = <&kp LC(X)>;
         };
+        combo_caps {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <13 22>;
+            bindings = <&caps_word>;
+        };
 
 /*                KEY POSITIONS
       ╭─────────────────────╮ ╭─────────────────────╮
@@ -631,8 +636,8 @@
 //                           XXX            XXX           XXX             XXX         XXX              XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    X        │ SPACE/SYM   │  NAV/BSPC  │   │    X       │    X         │      X      │
-                          XXX         LTS(SPACE)    LTN(BSPC)          XXX           XXX              XXX
+//                    │    X        │ SPACE/SYM   │  NAV       │   │    X       │   BSPC       │      X      │
+                          XXX         LTS(SPACE)     &mo NAV          XXX        &bspc_del          XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
