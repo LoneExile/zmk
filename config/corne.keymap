@@ -637,6 +637,11 @@
             key-positions = <08 09>;
             bindings = <&kp RBRC>;
         };
+        combo_lpar { // (
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <19 20>;
+            bindings = <&kp LPAR>;
+        };
 
 /*                KEY POSITIONS
       ╭─────────────────────╮ ╭─────────────────────╮
