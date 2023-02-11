@@ -511,6 +511,9 @@
         combos {
 // -----------------------------------------------------------------------------------------
         compatible = "zmk,combos";
+        layers = <0 1>
+
+// COMBOS LEFT
         combo_esc {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <2 3>;
@@ -612,12 +615,11 @@
             bindings = <&caps_word>;
         };
 
-// COMBOS LEFT
+// COMBOS RIGHT
         combo_caret { // ^
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <6 18>;
             bindings = <&kp CARET>;
-            layers = <0 1>
         };
         combo_under { // _
             timeout-ms = <TIMEOUT_MS>;
