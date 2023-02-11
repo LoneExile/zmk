@@ -87,7 +87,9 @@
 #define TAPPING_TERM_MS 150
 #define QUICK_TAP_MS 150
 
+// define Combos properties
 #define TIMEOUT_MS 50
+#define LAYER_ALLOW LINUX MAC THAI SYM SUM MEDIA FN NAV
 
 // -----------------------------------------------------------------------------------------
 / {
@@ -514,6 +516,7 @@
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
+            layer = <LAYER_ALLOW>
         };
         combo_repeat {
             timeout-ms = <TIMEOUT_MS>;
