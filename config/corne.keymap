@@ -574,7 +574,7 @@
         };
         combo_undo {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <1 02>;
+            key-positions = <1 2>;
             bindings = <&kp LC(Z)>;
         };
         combo_redo {
@@ -726,8 +726,8 @@
    XXX    XXX        &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    X        │ SPACE/SYM   │  NAV/SHIFT │   │    X       │   BSPC       │      X      │
-                          XXX         LTS(SPACE)    LTN(LSHIFT)          XXX        &bspc_del          XXX
+//                    │    X        │ SPACE/SYM   │     NAV    │   │    X       │   BSPC       │      X      │
+                          XXX         LTS(SPACE)      &mo NAV          XXX        &bspc_del          XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
