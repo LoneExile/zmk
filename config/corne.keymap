@@ -41,8 +41,8 @@
 
 // -----------------------------------------------------------------------------------------
 // define Home-row modifiers
-#define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LCTRL k2 &ht LALT k3 &ht LMETA  k4
-#define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL  k3 &ht RSHIFT k4
+#define HRML(k1,k2,k3,k4) &kp k1        &ht LCTRL k2 &ht LALT  k3 &ht LMETA  k4
+#define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL k3 &kp k4
 #define HRL &kp LSHIFT &kp LCTRL &kp LALT &kp LMETA
 #define HRR &kp RMETA &kp RALT &kp RCTRL &kp RSHIFT
 
@@ -627,6 +627,11 @@
             key-positions = <19 31>;
             bindings = <&kp MINUS>;
         };
+        combo_lbrc {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <7 8>;
+            bindings = <&kp lBRC>;
+        };
         combo_rbrc {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <8 9>;
@@ -721,8 +726,8 @@
    XXX    XXX        &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    X        │ SPACE/SYM   │  NAV       │   │    X       │   BSPC       │      X      │
-                          XXX         LTS(SPACE)     &mo NAV          XXX        &bspc_del          XXX
+//                    │    X        │ SPACE/SYM   │  NAV/SHIFT │   │    X       │   BSPC       │      X      │
+                          XXX         LTS(SPACE)    LTN(LSHIFT)          XXX        &bspc_del          XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
