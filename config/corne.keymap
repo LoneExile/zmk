@@ -31,8 +31,6 @@
 
 #define XXX &none
 
-#define TIMEOUT_MS 50
-
 // -----------------------------------------------------------------------------------------
 // define Layer-tap
 
@@ -85,6 +83,8 @@
 
 #define TAPPING_TERM_MS 150
 #define QUICK_TAP_MS 150
+
+#define TIMEOUT_MS 50
 
 // -----------------------------------------------------------------------------------------
 / {
@@ -521,12 +521,12 @@
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <03 04>;
             bindings = <&kp TAB>;
-          }
+        };
         combo_stab {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <04 05>;
             bindings = <&kp LS(TAB)>;
-          }
+        };
     };
 
 // -----------------------------------------------------------------------------------------
