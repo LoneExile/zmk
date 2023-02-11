@@ -89,7 +89,7 @@
 
 // define Combos properties
 #define TIMEOUT_MS 50
-#define LAYER_ALLOW LINUX MAC THAI SYM SUM MEDIA FN NAV
+#define LAYER_ALLOW 0 1 2 3 4 5 6 8
 
 // -----------------------------------------------------------------------------------------
 / {
