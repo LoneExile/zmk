@@ -532,7 +532,7 @@
         };
         combo_stab {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <4 05>;
+            key-positions = <4 5>;
             bindings = <&kp LS(TAB)>;
         };
         combo_at { // @
@@ -577,7 +577,7 @@
         };
         combo_undo {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <1 02>;
+            key-positions = <1 2>;
             bindings = <&kp LC(Z)>;
         };
         combo_redo {
