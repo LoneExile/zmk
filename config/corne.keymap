@@ -89,7 +89,7 @@
 
 // define Combos properties
 #define TIMEOUT_MS 50
-#define LAYER_ALLOW 0 1 2 3 4 5 6 8
+#define LAYER_ALLOW() 0 1 2 3 4 5 6 8
 
 // -----------------------------------------------------------------------------------------
 / {
@@ -617,109 +617,109 @@
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <6 18>;
             bindings = <&kp CARET>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_under { // _
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <18 30>;
             bindings = <&kp UNDER>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_plus { // +
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <7 19>;
             bindings = <&kp PLUS>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_minus { // -
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <19 31>;
             bindings = <&kp MINUS>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_lbrc {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <7 8>;
             bindings = <&kp LBRC>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_rbrc {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <8 9>;
             bindings = <&kp RBRC>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_lpar {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <19 20>;
             bindings = <&kp LPAR>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_rpar {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <20 21>;
             bindings = <&kp RPAR>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_lbkt {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <31 32>;
             bindings = <&kp LBKT>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_rbkt {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <32 33>;
             bindings = <&kp RBKT>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_dllr {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <9 21>;
             bindings = <&kp DLLR>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_equal {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <21 33>;
             bindings = <&kp EQUAL>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_colon {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <9 10>;
             bindings = <&kp COLON>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_semi {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <21 22>;
             bindings = <&kp SEMI>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_star {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <8 20>;
             bindings = <&kp STAR>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_fslh {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <20 32>;
             bindings = <&kp FSLH>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_qmark {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <22 34>;
             bindings = <&kp QMARK>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
         combo_excl {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <10 22>;
             bindings = <&kp EXCL>;
-            layers = <LAYER_ALLOW>
+            layers = <LAYER_ALLOW()>
         };
     };
 // -----------------------------------------------------------------------------------------
