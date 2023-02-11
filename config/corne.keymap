@@ -35,10 +35,11 @@
 // -----------------------------------------------------------------------------------------
 // define Layer-tap
 
-#define LTS(k1)  &lt SYM k1
-#define LTN(k1)  &lt NAV k1
-#define LTM(k1)  &lt MEDIA k1
-#define LTF(k1)  &lt FN k1
+#define LTS(k1)   &lt SYM k1
+#define LTN(k1)   &lt NAV k1
+#define LTNUM(k1) &lt NUM k1
+#define LTM(k1)   &lt MEDIA k1
+#define LTF(k1)   &lt FN k1
 
 // -----------------------------------------------------------------------------------------
 // define Home-row modifiers
@@ -727,8 +728,8 @@
    XXX    XXX        &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    X        │ SPACE/SYM   │  NAV       │   │    X       │   BSPC       │      X      │
-                          XXX         LTS(SPACE)     &mo NAV          XXX        &bspc_del          XXX
+//                    │    X        │ SPACE/NUM   │  NAV       │   │    X       │   BSPC       │      X      │
+                          XXX        LTNUM(SPACE)   &mo NAV          XXX        &bspc_del          XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -746,8 +747,8 @@
    XXX    &six_a       &w_slash    &m_q       &p_i     &zero_u       &eight_j     &u_n        &f_l       &t_v     &caret_n     XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    X        │ SPACE/SYM   │  NAV       │   │    X       │   BSPC       │      X      │
-                          XXX         LTS(SPACE)     &mo NAV          XXX        &bspc_del          XXX
+//                    │    X        │ SPACE/NUM   │  NAV       │   │    X       │   BSPC       │      X      │
+                          XXX        LTNUM(SPACE)   &mo NAV          XXX        &bspc_del          XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
