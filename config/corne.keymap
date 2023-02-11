@@ -612,6 +612,7 @@
             bindings = <&caps_word>;
         };
 
+// COMBOS LEFT
         combo_caret { // ^
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <6 18>;
