@@ -804,8 +804,8 @@
    XXX    XXX         XXX        XXX        XXX        XXX           &kp N0      &kp N1     &kp N2     &kp N3    &kp DOT       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │     X      │   │     X      │    BSPC      │      X      │
-                            XXX           XXX          XXX              XXX        &bspc_del         XXX
+//                    │      X      │      X      │    NAV     │   │     X      │    BSPC      │      X      │
+                            XXX           XXX         &mo NAV           XXX        &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -817,10 +817,10 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │  BASE    │   THAI   │  MOUSE   │  MEDIA   │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    &to LINUX  &tog THAI  &to MOUSE  &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+   XXX    &to LINUX  &tog THAI &tog MOUSE &tog MEDIA  &tog FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │    X     │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
-   XXX      HRL                                         XXX          &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
+//      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  NUM     │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
+   XXX      HRL                                       &tog NUM        &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  X       │  X       │  X       │  X       │    X     │   │  HOME    │  PG_DN   │  PG_UP   │  END     │  INS     │
    XXX    XXX         XXX        XXX        XXX          XXX         &kp HOME   &kp PG_DN  &kp PG_UP   &kp END    &kp INS    XXX
@@ -849,8 +849,8 @@
    XXX    XXX         XXX        XXX        XXX        XXX             &kp C_REWIND             XXX                    XXX         &kp C_FAST_FORWARD    XXX           XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰─────────────────┴──────────────────────┴─────────────────────┴────────────────┴────────────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │    X        │      X      │  TO BASE   │   │  Mute      │  Play/Pause  │    X        │
-                          XXX             XXX        &to LINUX       &kp C_MUTE     &kp C_PP       XXX
+//                    │    X        │      X      │    NAV     │   │  Mute      │  Play/Pause  │    X        │
+                          XXX             XXX         &mo NAV        &kp C_MUTE     &kp C_PP       XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -871,8 +871,8 @@
    XXX    &kp F10    &kp F1     &kp F2     &kp F3  &kp PAUSE_BREAK   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 5   XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────────┴─────────────┴──────────────┴──────────────┴──────────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │   TO BASE  │   │     X      │      X       │      X      │
-                            XXX           XXX        &to LINUX          XXX           XXX            XXX
+//                    │      X      │      X      │    NAV     │   │     X      │      X       │      X      │
+                            XXX           XXX         &mo NAV           XXX           XXX            XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
@@ -893,8 +893,8 @@
    XXX     XXX        XXX        XXX        XXX        XXX             XXX      &kp PG_DN  &kp PG_UP    XXX        XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │      X      │      X      │   TO BASE  │   │   LCLICK   │    RCLICK    │    MCLICK   │
-                            XXX           XXX        &to LINUX         U_BTN1        U_BTN2         U_BTN3 
+//                    │      X      │      X      │    NAV     │   │   LCLICK   │    RCLICK    │    MCLICK   │
+                            XXX           XXX         &mo NAV          U_BTN1        U_BTN2         U_BTN3 
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
