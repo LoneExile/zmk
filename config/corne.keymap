@@ -607,7 +607,7 @@
         };
         combo_caps {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <13 22>;
+            key-positions = <1 10>;
             bindings = <&caps_word>;
         };
         combo_caret { // ^
