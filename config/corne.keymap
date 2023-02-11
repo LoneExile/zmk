@@ -516,7 +516,6 @@
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
-            layer = <LAYER_ALLOW>
         };
         combo_repeat {
             timeout-ms = <TIMEOUT_MS>;
@@ -613,10 +612,12 @@
             key-positions = <1 10>;
             bindings = <&caps_word>;
         };
+
         combo_caret { // ^
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <6 18>;
             bindings = <&kp CARET>;
+            layers = <LAYER_ALLOW>
         };
         combo_under { // _
             timeout-ms = <TIMEOUT_MS>;
