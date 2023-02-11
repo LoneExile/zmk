@@ -629,6 +629,16 @@
         };
 
 // -----------------------------------------------------------------------------------------
+        combo_semi { // ;
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <21 22>;
+            bindings = <&kp SEMI>;
+        };
+        combo_star { // *
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <08 20>;
+            bindings = <&kp STAR>;
+        };
         combo_fslh { // :
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <20 32>;
