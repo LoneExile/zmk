@@ -649,7 +649,7 @@
             key-positions = <22 34>;
             bindings = <&kp QMARK>;
         };
-        combo_excl { // !
+        combo_excl {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <10 22>;
             bindings = <&kp EXCL>;
