@@ -627,6 +627,76 @@
             key-positions = <19 31>;
             bindings = <&kp MINUS>;
         };
+        combo_lbrc { 
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <07 08>;
+            bindings = <&kp LBRC>;
+        };
+        combo_rbrc {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <08 09>;
+            bindings = <&kp RBRC>;
+        };
+        combo_lpar { // (
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <19 20>;
+            bindings = <&kp LPAR>;
+        };
+        combo_rpar { // )
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <20 21>;
+            bindings = <&kp RPAR>;
+        };
+        combo_lbkt { // [
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <31 32>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbkt { // ]
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <32 33>;
+            bindings = <&kp RBKT>;
+        };
+        combo_dllr { // $
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <09 21>;
+            bindings = <&kp DLLR>;
+        };
+        combo_equal { // =
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <21 33>;
+            bindings = <&kp EQUAL>;
+        };
+        combo_colon { // :
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <09 10>;
+            bindings = <&kp COLON>;
+        };
+        combo_semi { // :
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <21 22>;
+            bindings = <&kp SEMI>;
+        };
+        combo_star { // *
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <08 20>;
+            bindings = <&kp STAR>;
+        };
+        combo_fslh { // :
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <20 32>;
+            bindings = <&kp FSLH>;
+        };
+        combo_qmark { // :
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <22 34>;
+            bindings = <&kp QMARK>;
+        };
+        combo_excl { // !
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <10 22>;
+            bindings = <&kp EXCL>;
+        };
 
 /*                KEY POSITIONS
       ╭─────────────────────╮ ╭─────────────────────╮
