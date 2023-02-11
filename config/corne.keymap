@@ -627,6 +627,18 @@
             key-positions = <19 31>;
             bindings = <&kp MINUS>;
         };
+
+// -----------------------------------------------------------------------------------------
+        combo_fslh { // :
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <20 32>;
+            bindings = <&kp FSLH>;
+        };
+        combo_qmark { // :
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <22 34>;
+            bindings = <&kp QMARK>;
+        };
         combo_excl { // !
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <10 22>;
