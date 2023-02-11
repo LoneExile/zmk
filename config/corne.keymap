@@ -577,6 +577,11 @@
             key-positions = <17 29>;
             bindings = <&kp TILDE>;
         };
+        combo_undo {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <13 14>;
+            bindings = <&kp LC(Z)>;
+        };
         combo_copy {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <26 27>;
@@ -682,6 +687,11 @@
             key-positions = <20 32>;
             bindings = <&kp FSLH>;
         };
+        combo_qmark { // :
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <22 34>;
+            bindings = <&kp QMARK>;
+        };
 
 
 /*                KEY POSITIONS
@@ -714,8 +724,8 @@
 //      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ' "     │
    XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,         APOS)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │
-   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    XXX
+//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │    X     │
+   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     X       │      X      │      X     │   │     X      │    X         │      X      │
