@@ -617,11 +617,6 @@
             key-positions = <18 30>;
             bindings = <&kp UNDER>;
         };
-        combo_under { // _
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <18 30>;
-            bindings = <&kp UNDER>;
-        };
         combo_plus { // +
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <07 19>;
