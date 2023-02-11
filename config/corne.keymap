@@ -89,6 +89,8 @@
 
 #define TIMEOUT_MS 50
 
+//layers =
+
 // -----------------------------------------------------------------------------------------
 / {
 // -----------------------------------------------------------------------------------------
@@ -509,7 +511,7 @@
 // -----------------------------------------------------------------------------------------
         combos {
 // -----------------------------------------------------------------------------------------
-        compatible = "zmk,combos";
+        compatible = "zmk,combo";
         combo_esc {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <2 3>;
@@ -535,42 +537,42 @@
             key-positions = <4 5>;
             bindings = <&kp LS(TAB)>;
         };
-        combo_at { // @
+        combo_at {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <2 14>;
             bindings = <&kp AT>;
         };
-        combo_grave { // `
+        combo_grave {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <14 26>;
             bindings = <&kp GRAVE>;
         };
-        combo_nuhs { // #
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <3 15>;
-            bindings = <&kp NUHS>;
-        };
-        combo_bslh { // \
+        combo_bslh {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <15 27>;
             bindings = <&kp BSLH>;
         };
-        combo_amps { // &
+        combo_nuhs {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <3 15>;
+            bindings = <&kp NUHS>;
+        };
+        combo_amps {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <4 16>;
             bindings = <&kp AMPS>;
         };
-        combo_pipe { // |
+        combo_pipe {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <16 28>;
             bindings = <&kp PIPE>;
         };
-        combo_prcnt { // %
+        combo_prcnt {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <5 17>;
             bindings = <&kp PRCNT>;
         };
-        combo_tilde { // ~
+        combo_tilde {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <17 29>;
             bindings = <&kp TILDE>;
