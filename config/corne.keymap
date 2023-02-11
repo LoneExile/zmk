@@ -517,11 +517,6 @@
             key-positions = <15 16>;
             bindings = <&kp RET>;
         };
-        combo_ret {
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <15 16>;
-            bindings = <&kp RET>;
-        };
         combo_tab {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <03 04>;
