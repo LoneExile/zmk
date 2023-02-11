@@ -517,7 +517,6 @@
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
-            layers = <0 1>
         };
         combo_repeat {
             timeout-ms = <TIMEOUT_MS>;
