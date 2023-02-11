@@ -629,16 +629,6 @@
         };
 
 // -----------------------------------------------------------------------------------------
-        combo_equal {
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <21 33>;
-            bindings = <&kp EQUAL>;
-        };
-        combo_colon {
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <09 10>;
-            bindings = <&kp COLON>;
-        };
         combo_semi {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <21 22>;
