@@ -550,7 +550,7 @@
             key-positions = <03 15>;
             bindings = <&kp NUHS>;
         };
-        combo_bslh { // \
+        combo_bslh {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <15 27>;
             bindings = <&kp BSLH>;
