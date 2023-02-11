@@ -647,6 +647,16 @@
             key-positions = <20 21>;
             bindings = <&kp RPAR>;
         };
+        combo_lbkt { // [
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <31 32>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbkt { // ]
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <32 33>;
+            bindings = <&kp RBKT>;
+        };
 
 /*                KEY POSITIONS
       ╭─────────────────────╮ ╭─────────────────────╮
