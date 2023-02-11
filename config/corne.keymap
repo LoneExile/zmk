@@ -409,7 +409,7 @@
         };
         combo_rbrc {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <08 09>;
+            key-positions = <8 9>;
             bindings = <&kp RBRC>;
         };
 
