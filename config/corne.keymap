@@ -627,6 +627,11 @@
             key-positions = <19 31>;
             bindings = <&kp MINUS>;
         };
+        combo_lbrc { 
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <07 08>;
+            bindings = <&kp LBRC>;
+        };
 
 /*                KEY POSITIONS
       ╭─────────────────────╮ ╭─────────────────────╮
