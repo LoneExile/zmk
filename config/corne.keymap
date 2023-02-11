@@ -82,8 +82,8 @@
 #define U_MS_U &mmv MOVE_UP
 
 // -----------------------------------------------------------------------------------------
-// define Hold-tap properties
 
+// define Hold-tap properties
 #define TAPPING_TERM_MS 150
 #define QUICK_TAP_MS 150
 
