@@ -507,11 +507,6 @@
         combos {
 // -----------------------------------------------------------------------------------------
         compatible = "zmk,combos";
-        combo_excl {
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <01 13>;
-            bindings = <&kp EXCL>;
-        };
         combo_esc {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <02 03>;
@@ -579,8 +574,18 @@
         };
         combo_undo {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <13 14>;
+            key-positions = <01 02>;
             bindings = <&kp LC(Z)>;
+        };
+        combo_redo {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <01 13>;
+            bindings = <&kp LC(LS(Z))>;
+        };
+        combo_z {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <13 14>;
+            bindings = <&kp Z>;
         };
         combo_copy {
             timeout-ms = <TIMEOUT_MS>;
@@ -692,6 +697,11 @@
             key-positions = <22 34>;
             bindings = <&kp QMARK>;
         };
+        combo_excl {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <10 22>;
+            bindings = <&kp EXCL>;
+        };
 
 
 /*                KEY POSITIONS
@@ -724,8 +734,8 @@
 //      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ' "     │
    XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,         APOS)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │    X     │
-   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
+//      │  X       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │    X     │
+   XXX    XXX        &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │     X       │      X      │      X     │   │     X      │    X         │      X      │
