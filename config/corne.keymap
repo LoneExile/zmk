@@ -547,7 +547,7 @@
         };
         combo_nuhs {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <3 15>;
+            key-positions = <03 15>;
             bindings = <&kp NUHS>;
         };
         combo_bslh { // \
