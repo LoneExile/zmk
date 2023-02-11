@@ -667,36 +667,6 @@
             key-positions = <21 33>;
             bindings = <&kp EQUAL>;
         };
-        combo_colon { // :
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <09 10>;
-            bindings = <&kp COLON>;
-        };
-        combo_semi { // :
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <21 22>;
-            bindings = <&kp SEMI>;
-        };
-        combo_star { // *
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <08 20>;
-            bindings = <&kp STAR>;
-        };
-        combo_fslh { // :
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <20 32>;
-            bindings = <&kp FSLH>;
-        };
-        combo_qmark { // :
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <22 34>;
-            bindings = <&kp QMARK>;
-        };
-        combo_excl { // !
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <10 22>;
-            bindings = <&kp EXCL>;
-        };
 
 /*                KEY POSITIONS
       ╭─────────────────────╮ ╭─────────────────────╮
@@ -713,10 +683,6 @@
                 compatible = "zmk,keymap";
 
 // -----------------------------------------------------------------------------------------
-
-//#define HRML(k1,k2,k3,k4) &ht LSHIFT k1 &ht LCTRL k2 &ht LALT k3 &ht LMETA  k4
-//#define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL  k3 &ht RSHIFT k4
-
                 linux_layer {
 // -----------------------------------------------------------------------------------------
                         label = "LINUX";
@@ -731,10 +697,6 @@
 //      │  X       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │    X     │
    XXX    XXX        &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
-//                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
-//                    │     X       │      X      │      X     │   │     X      │    X         │      X      │
-//                           XXX            XXX           XXX             XXX         XXX              XXX
-//                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    X        │ SPACE/SYM   │  NAV       │   │    X       │   BSPC       │      X      │
                           XXX         LTS(SPACE)     &mo NAV          XXX        &bspc_del          XXX
