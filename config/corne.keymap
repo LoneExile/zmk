@@ -120,15 +120,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        // combo_lpar
-        lpar_rpar: lpar_rpar {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LPAR_RPAR";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp RPAR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
 // -----------------------------------------------------------------------------------------
         htst: ht_space_tab {
             label = "hold_tap_space_tab";
