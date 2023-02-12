@@ -123,7 +123,7 @@
         // combo_lpar
         lpar_rpar: lpar_rpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
+            label = "LPAR_RPAR";
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp RPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
