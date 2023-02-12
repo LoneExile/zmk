@@ -107,6 +107,16 @@
         };
 
 // -----------------------------------------------------------------------------------------
+        htbd : ht_bspc_del {
+            label = "hold_tap_space_tab";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            global-quick-tap;
+            bindings = <&kp>, <&bspc_del>;
+        };
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
@@ -578,16 +588,6 @@
             key-positions = <17 29>;
             bindings = <&kp TILDE>;
         };
-        combo_lshift {
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <13 14>;
-            bindings = <&sk LSHIFT>;
-        };
-        combo_rshift {
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <21 22>;
-            bindings = <&sk RSHIFT>;
-        };
         combo_undo {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <16 17>;
@@ -600,7 +600,7 @@
         };
         combo_z {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <1 2>;
+            key-positions = <13 14>;
             bindings = <&kp Z>;
         };
         combo_copy {
@@ -692,7 +692,7 @@
         };
         combo_semi {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <18 19>;
+            key-positions = <21 22>;
             bindings = <&kp SEMI>;
         };
         combo_star {
@@ -737,7 +737,7 @@
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    X        │ SPACE/NUM   │  NAV       │   │    X       │   BSPC       │      X      │
-                          XXX        LTNUM(SPACE)   &mo NAV          XXX        &bspc_del          XXX
+                          XXX        LTNUM(SPACE)   &mo NAV          XXX         &htbd LSHIFT 0      XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
