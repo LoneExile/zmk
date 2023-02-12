@@ -49,6 +49,10 @@
 #define HRL &kp LSHIFT &kp LCTRL &kp LALT &kp LMETA
 #define HRR &kp RMETA &kp RALT &kp RCTRL &kp RSHIFT
 
+&sk {
+    quick-release;
+};
+
 // -----------------------------------------------------------------------------------------
 // define MOUSE properties
 
