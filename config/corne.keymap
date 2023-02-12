@@ -107,21 +107,11 @@
         };
 
 // -----------------------------------------------------------------------------------------
-        htbd : ht_bspc_del {
-            label = "hold_tap_space_tab";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <TAPPING_TERM_MS>;
-            quick-tap-ms = <QUICK_TAP_MS>;
-            global-quick-tap;
-            bindings = <&kp>, <&bspc_del>;
-        };
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            bindings = <&ht LSHIFT BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
@@ -737,7 +727,7 @@
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    X        │ SPACE/NUM   │  NAV       │   │    X       │   BSPC       │      X      │
-                          XXX        LTNUM(SPACE)   &mo NAV          XXX         &htbd LSHIFT 0      XXX
+                          XXX        LTNUM(SPACE)   &mo NAV          XXX          &bspc_del      XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
