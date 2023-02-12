@@ -44,8 +44,9 @@
 
 // -----------------------------------------------------------------------------------------
 // define Home-row modifiers
-#define HRML(k1,k2,k3,k4) &kp k1 &ht LCTRL k2 &ht LALT k3 &ht LMETA  k4
-#define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL  k3 &kp k4
+#define ASL(k1) &as LS(k1) k1
+#define HRML(k1,k2,k3,k4) &ASL(k1) &ht LCTRL k2 &ht LALT k3 &ht LMETA  k4
+#define HRMR(k1,k2,k3,k4) &ht RMETA  k1 &ht RALT  k2 &ht RCTRL  k3 &mt RSHIFT k4
 #define HRL &kp LSHIFT &kp LCTRL &kp LALT &kp LMETA
 #define HRR &kp RMETA &kp RALT &kp RCTRL &kp RSHIFT
 
@@ -95,6 +96,15 @@
 // -----------------------------------------------------------------------------------------
         behaviors {
 // -----------------------------------------------------------------------------------------
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            #binding-cells = <2>;
+            tapping_term_ms = <135>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
         ht: hold_tap {
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
