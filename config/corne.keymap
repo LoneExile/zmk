@@ -578,19 +578,29 @@
             key-positions = <17 29>;
             bindings = <&kp TILDE>;
         };
+        combo_lshift {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <13 14>;
+            bindings = <&sk LSHIFT>;
+        };
+        combo_rshift {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <21 22>;
+            bindings = <&sk RSHIFT>;
+        };
         combo_undo {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <1 02>;
+            key-positions = <16 17>;
             bindings = <&kp LC(Z)>;
         };
         combo_redo {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <1 13>;
+            key-positions = <28 29>;
             bindings = <&kp LC(LS(Z))>;
         };
         combo_z {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <13 14>;
+            key-positions = <1 2>;
             bindings = <&kp Z>;
         };
         combo_copy {
