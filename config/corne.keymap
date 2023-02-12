@@ -120,6 +120,15 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
+
+        lpar_rpar: lpar_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAR_RPAR";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp RPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
 // -----------------------------------------------------------------------------------------
         htst: ht_space_tab {
             label = "hold_tap_space_tab";
@@ -233,14 +242,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        lpar_rpar: lpar_rpar {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LPAR_RPAR";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp RPAR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
+//       lpar_rpar: lpar_rpar {
+//           compatible = "zmk,behavior-mod-morph";
+//           label = "LPAR_RPAR";
+//           #binding-cells = <0>;
+//           bindings = <&kp LPAR>, <&kp RPAR>;
+//           mods = <(MOD_LSFT|MOD_RSFT)>;
+//           keep-mods = <(MOD_RSFT)>;
+//       };
         plus_0: plus_0 {
             compatible = "zmk,behavior-mod-morph";
             label = "PLUS_0";
@@ -692,7 +701,7 @@
         };
         combo_semi {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <18 19>;
+            key-positions = <21 22>;
             bindings = <&kp SEMI>;
         };
         combo_star {
