@@ -111,7 +111,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
             #binding-cells = <0>;
-            bindings = <&ht LSHIFT BACKSPACE>, <&kp DELETE>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
@@ -520,8 +520,13 @@
         };
         combo_repeat {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <14 15>;
+            key-positions = <1 2>;
             bindings = <&key_repeat>;
+        };
+        combo_lshift {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <14 15>;
+            bindings = <&sk LSHIFT>;
         };
         combo_ret {
             timeout-ms = <TIMEOUT_MS>;
