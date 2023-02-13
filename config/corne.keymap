@@ -608,11 +608,11 @@
             key-positions = <28 29>;
             bindings = <&kp LC(LS(Z))>;
         };
-        combo_z {
-            timeout-ms = <TIMEOUT_MS_SLOW>;
-            key-positions = <13 14>;
-            bindings = <&kp Z>;
-        };
+//       combo_z {
+//           timeout-ms = <TIMEOUT_MS_SLOW>;
+//           key-positions = <13 14>;
+//           bindings = <&kp Z>;
+//       };
         combo_copy {
             timeout-ms = <TIMEOUT_MS>;
             key-positions = <26 27>;
@@ -628,11 +628,11 @@
             key-positions = <26 28>;
             bindings = <&kp LC(X)>;
         };
-        combo_caps {
-            timeout-ms = <TIMEOUT_MS_SLOW>;
-            key-positions = <16 19>;
-            bindings = <&caps_word>;
-        };
+//       combo_caps {
+//           timeout-ms = <TIMEOUT_MS_SLOW>;
+//           key-positions = <16 19>;
+//           bindings = <&caps_word>;
+//       };
 
 // COMBOS RIGHT
         combo_caret { // ^
@@ -742,12 +742,12 @@
 //      │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ' "     │
    XXX   HRML(A,      S,         D,         F)         &kp G         &kp H      HRMR(J,     K,         L,         APOS)      XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │    X     │
-   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT      XXX       XXX
+//      │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  CAPS    │
+   XXX    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT   &caps_word   XXX
 //      ╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
 //                    ╭─────────────┬─────────────┬────────────╮   ╭────────────┬──────────────┬─────────────╮
 //                    │    X        │ SPACE/NUM   │  NAV       │   │    X       │   BSPC       │      X      │
-                          XXX        LTNUM(SPACE)   &mo NAV          XXX          &bspc_del      XXX
+                          XXX        LTNUM(SPACE)   &mo NAV            XXX         &bspc_del         XXX
 //                    ╰─────────────┴─────────────┴────────────╯   ╰────────────┴──────────────┴─────────────╯
                         >;
                 };
