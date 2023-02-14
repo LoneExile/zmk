@@ -50,7 +50,7 @@
 #define HRR &kp RMETA &kp RALT &kp RCTRL &kp RSHIFT
 
 &sk {
-    release-after-ms = <2000>;
+    release-after-ms = <1000>;
     quick-release;
 };
 
