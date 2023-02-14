@@ -90,10 +90,10 @@
 
 // define Hold-tap properties
 #define TAPPING_TERM_MS 150
-#define QUICK_TAP_MS 150
+#define QUICK_TAP_MS 120
 
 // define Combos properties
-#define TIMEOUT_MS 50
+#define TIMEOUT_MS 40
 #define TIMEOUT_MS_SLOW 100
 
 // -----------------------------------------------------------------------------------------
