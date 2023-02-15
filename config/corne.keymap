@@ -90,7 +90,7 @@
 
 // define Hold-tap properties
 #define TAPPING_TERM_MS 150
-#define QUICK_TAP_MS 120
+#define QUICK_TAP_MS 150
 
 // define Combos properties
 #define TIMEOUT_MS 40
@@ -918,7 +918,7 @@
                         bindings = <
 //      ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
 //      │  BASE    │   THAI   │  MOUSE   │  MEDIA   │  FN      │   │  REDO    │  PASTE   │  COPY    │  CUT     │  UNDO    │
-   XXX    &to LINUX  &tog THAI &tog MOUSE &tog MEDIA  &tog FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
+   XXX    &to LINUX  &to THAI  &to MOUSE   &to MEDIA  &to FN        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO   XXX
 //      ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //      │  LSHIFT  │  LCTRL   │  LALT    │  LMETA   │  NUM     │   │  LEFT    │  DOWN    │    UP    │  RIGHT   │  CAPS    │
    XXX      HRL                                       &tog NUM        &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &caps_word  XXX 
